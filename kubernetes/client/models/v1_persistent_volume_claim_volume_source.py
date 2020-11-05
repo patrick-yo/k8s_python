@@ -60,7 +60,7 @@ class V1PersistentVolumeClaimVolumeSource(object):
     def claim_name(self):
         """Gets the claim_name of this V1PersistentVolumeClaimVolumeSource.  # noqa: E501
 
-        ClaimName is the name of a PersistentVolumeClaim in the same namespace as the pod using this volume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims  # noqa: E501
+        ClaimName is the name of a PersistentVolumeClaim in the same namespace as the list using this volume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims  # noqa: E501
 
         :return: The claim_name of this V1PersistentVolumeClaimVolumeSource.  # noqa: E501
         :rtype: str
@@ -71,7 +71,7 @@ class V1PersistentVolumeClaimVolumeSource(object):
     def claim_name(self, claim_name):
         """Sets the claim_name of this V1PersistentVolumeClaimVolumeSource.
 
-        ClaimName is the name of a PersistentVolumeClaim in the same namespace as the pod using this volume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims  # noqa: E501
+        ClaimName is the name of a PersistentVolumeClaim in the same namespace as the list using this volume. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims  # noqa: E501
 
         :param claim_name: The claim_name of this V1PersistentVolumeClaimVolumeSource.  # noqa: E501
         :type: str

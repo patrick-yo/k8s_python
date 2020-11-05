@@ -48,7 +48,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -75,7 +75,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -177,7 +177,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -205,7 +205,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -825,9 +825,9 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodAttachOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str container: The container in which to execute the command. Defaults to only container if there is only one container in the pod.
+        :param str container: The container in which to execute the command. Defaults to only container if there is only one container in the list.
         :param bool stderr: Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true.
-        :param bool stdin: Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false.
+        :param bool stdin: Stdin if true, redirects the standard input stream of the list for this call. Defaults to false.
         :param bool stdout: Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true.
         :param bool tty: TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -856,9 +856,9 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodAttachOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str container: The container in which to execute the command. Defaults to only container if there is only one container in the pod.
+        :param str container: The container in which to execute the command. Defaults to only container if there is only one container in the list.
         :param bool stderr: Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true.
-        :param bool stdin: Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false.
+        :param bool stdin: Stdin if true, redirects the standard input stream of the list for this call. Defaults to false.
         :param bool stdout: Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true.
         :param bool tty: TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false.
         :param _return_http_data_only: response data without head status code
@@ -974,10 +974,10 @@ class CoreV1Api(object):
         :param str name: name of the PodExecOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str command: Command is the remote command to execute. argv array. Not executed within a shell.
-        :param str container: Container in which to execute the command. Defaults to only container if there is only one container in the pod.
-        :param bool stderr: Redirect the standard error stream of the pod for this call. Defaults to true.
-        :param bool stdin: Redirect the standard input stream of the pod for this call. Defaults to false.
-        :param bool stdout: Redirect the standard output stream of the pod for this call. Defaults to true.
+        :param str container: Container in which to execute the command. Defaults to only container if there is only one container in the list.
+        :param bool stderr: Redirect the standard error stream of the list for this call. Defaults to true.
+        :param bool stdin: Redirect the standard input stream of the list for this call. Defaults to false.
+        :param bool stdout: Redirect the standard output stream of the list for this call. Defaults to true.
         :param bool tty: TTY if true indicates that a tty will be allocated for the exec call. Defaults to false.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -1006,10 +1006,10 @@ class CoreV1Api(object):
         :param str name: name of the PodExecOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str command: Command is the remote command to execute. argv array. Not executed within a shell.
-        :param str container: Container in which to execute the command. Defaults to only container if there is only one container in the pod.
-        :param bool stderr: Redirect the standard error stream of the pod for this call. Defaults to true.
-        :param bool stdin: Redirect the standard input stream of the pod for this call. Defaults to false.
-        :param bool stdout: Redirect the standard output stream of the pod for this call. Defaults to true.
+        :param str container: Container in which to execute the command. Defaults to only container if there is only one container in the list.
+        :param bool stderr: Redirect the standard error stream of the list for this call. Defaults to true.
+        :param bool stdin: Redirect the standard input stream of the list for this call. Defaults to false.
+        :param bool stdout: Redirect the standard output stream of the list for this call. Defaults to true.
         :param bool tty: TTY if true indicates that a tty will be allocated for the exec call. Defaults to false.
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -1254,7 +1254,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1281,7 +1281,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -1383,7 +1383,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -1411,7 +1411,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2031,7 +2031,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2058,7 +2058,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2160,7 +2160,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2188,7 +2188,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2808,7 +2808,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2835,7 +2835,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -2937,7 +2937,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -2965,7 +2965,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -3585,7 +3585,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3612,7 +3612,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -3714,7 +3714,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -3742,7 +3742,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4362,9 +4362,9 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodAttachOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str container: The container in which to execute the command. Defaults to only container if there is only one container in the pod.
+        :param str container: The container in which to execute the command. Defaults to only container if there is only one container in the list.
         :param bool stderr: Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true.
-        :param bool stdin: Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false.
+        :param bool stdin: Stdin if true, redirects the standard input stream of the list for this call. Defaults to false.
         :param bool stdout: Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true.
         :param bool tty: TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4393,9 +4393,9 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodAttachOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str container: The container in which to execute the command. Defaults to only container if there is only one container in the pod.
+        :param str container: The container in which to execute the command. Defaults to only container if there is only one container in the list.
         :param bool stderr: Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true.
-        :param bool stdin: Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false.
+        :param bool stdin: Stdin if true, redirects the standard input stream of the list for this call. Defaults to false.
         :param bool stdout: Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true.
         :param bool tty: TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false.
         :param _return_http_data_only: response data without head status code
@@ -4511,10 +4511,10 @@ class CoreV1Api(object):
         :param str name: name of the PodExecOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str command: Command is the remote command to execute. argv array. Not executed within a shell.
-        :param str container: Container in which to execute the command. Defaults to only container if there is only one container in the pod.
-        :param bool stderr: Redirect the standard error stream of the pod for this call. Defaults to true.
-        :param bool stdin: Redirect the standard input stream of the pod for this call. Defaults to false.
-        :param bool stdout: Redirect the standard output stream of the pod for this call. Defaults to true.
+        :param str container: Container in which to execute the command. Defaults to only container if there is only one container in the list.
+        :param bool stderr: Redirect the standard error stream of the list for this call. Defaults to true.
+        :param bool stdin: Redirect the standard input stream of the list for this call. Defaults to false.
+        :param bool stdout: Redirect the standard output stream of the list for this call. Defaults to true.
         :param bool tty: TTY if true indicates that a tty will be allocated for the exec call. Defaults to false.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
@@ -4543,10 +4543,10 @@ class CoreV1Api(object):
         :param str name: name of the PodExecOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str command: Command is the remote command to execute. argv array. Not executed within a shell.
-        :param str container: Container in which to execute the command. Defaults to only container if there is only one container in the pod.
-        :param bool stderr: Redirect the standard error stream of the pod for this call. Defaults to true.
-        :param bool stdin: Redirect the standard input stream of the pod for this call. Defaults to false.
-        :param bool stdout: Redirect the standard output stream of the pod for this call. Defaults to true.
+        :param str container: Container in which to execute the command. Defaults to only container if there is only one container in the list.
+        :param bool stderr: Redirect the standard error stream of the list for this call. Defaults to true.
+        :param bool stdin: Redirect the standard input stream of the list for this call. Defaults to false.
+        :param bool stdout: Redirect the standard output stream of the list for this call. Defaults to true.
         :param bool tty: TTY if true indicates that a tty will be allocated for the exec call. Defaults to false.
         :param _return_http_data_only: response data without head status code
                                        and headers
@@ -4791,7 +4791,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4818,7 +4818,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -4920,7 +4920,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -4948,7 +4948,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -5568,7 +5568,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -5595,7 +5595,7 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str path: Path is the URL path to use for the current proxy request to pod.
+        :param str path: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -5697,7 +5697,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
                                  be returned without reading/decoding response
                                  data. Default is True.
@@ -5725,7 +5725,7 @@ class CoreV1Api(object):
         :param str name: name of the PodProxyOptions (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
         :param str path: path to the resource (required)
-        :param str path2: Path is the URL path to use for the current proxy request to pod.
+        :param str path2: Path is the URL path to use for the current proxy request to list.
         :param _return_http_data_only: response data without head status code
                                        and headers
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -22905,12 +22905,12 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the Pod (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str container: The container for which to stream logs. Defaults to only container if there is one container in the pod.
-        :param bool follow: Follow the log stream of the pod. Defaults to false.
+        :param str container: The container for which to stream logs. Defaults to only container if there is one container in the list.
+        :param bool follow: Follow the log stream of the list. Defaults to false.
         :param int limit_bytes: If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit.
         :param str pretty: If 'true', then the output is pretty printed.
         :param bool previous: Return previous terminated container logs. Defaults to false.
-        :param int since_seconds: A relative time in seconds before the current time from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified.
+        :param int since_seconds: A relative time in seconds before the current time from which to show logs. If this value precedes the time a list was started, only logs since the list start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified.
         :param int tail_lines: If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime
         :param bool timestamps: If true, add an RFC3339 or RFC3339Nano timestamp at the beginning of every line of log output. Defaults to false.
         :param _preload_content: if False, the urllib3.HTTPResponse object will
@@ -22939,12 +22939,12 @@ class CoreV1Api(object):
         :param async_req bool: execute request asynchronously
         :param str name: name of the Pod (required)
         :param str namespace: object name and auth scope, such as for teams and projects (required)
-        :param str container: The container for which to stream logs. Defaults to only container if there is one container in the pod.
-        :param bool follow: Follow the log stream of the pod. Defaults to false.
+        :param str container: The container for which to stream logs. Defaults to only container if there is one container in the list.
+        :param bool follow: Follow the log stream of the list. Defaults to false.
         :param int limit_bytes: If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit.
         :param str pretty: If 'true', then the output is pretty printed.
         :param bool previous: Return previous terminated container logs. Defaults to false.
-        :param int since_seconds: A relative time in seconds before the current time from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified.
+        :param int since_seconds: A relative time in seconds before the current time from which to show logs. If this value precedes the time a list was started, only logs since the list start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified.
         :param int tail_lines: If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime
         :param bool timestamps: If true, add an RFC3339 or RFC3339Nano timestamp at the beginning of every line of log output. Defaults to false.
         :param _return_http_data_only: response data without head status code

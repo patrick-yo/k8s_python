@@ -75,7 +75,7 @@ class V1ContainerPort(object):
     def container_port(self):
         """Gets the container_port of this V1ContainerPort.  # noqa: E501
 
-        Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.  # noqa: E501
+        Number of port to expose on the list's IP address. This must be a valid port number, 0 < x < 65536.  # noqa: E501
 
         :return: The container_port of this V1ContainerPort.  # noqa: E501
         :rtype: int
@@ -86,7 +86,7 @@ class V1ContainerPort(object):
     def container_port(self, container_port):
         """Sets the container_port of this V1ContainerPort.
 
-        Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.  # noqa: E501
+        Number of port to expose on the list's IP address. This must be a valid port number, 0 < x < 65536.  # noqa: E501
 
         :param container_port: The container_port of this V1ContainerPort.  # noqa: E501
         :type: int
@@ -146,7 +146,7 @@ class V1ContainerPort(object):
     def name(self):
         """Gets the name of this V1ContainerPort.  # noqa: E501
 
-        If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services.  # noqa: E501
+        If specified, this must be an IANA_SVC_NAME and unique within the list. Each named port in a list must have a unique name. Name for the port that can be referred to by services.  # noqa: E501
 
         :return: The name of this V1ContainerPort.  # noqa: E501
         :rtype: str
@@ -157,7 +157,7 @@ class V1ContainerPort(object):
     def name(self, name):
         """Sets the name of this V1ContainerPort.
 
-        If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services.  # noqa: E501
+        If specified, this must be an IANA_SVC_NAME and unique within the list. Each named port in a list must have a unique name. Name for the port that can be referred to by services.  # noqa: E501
 
         :param name: The name of this V1ContainerPort.  # noqa: E501
         :type: str

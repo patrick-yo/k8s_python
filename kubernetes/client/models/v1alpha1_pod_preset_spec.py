@@ -166,7 +166,7 @@ class V1alpha1PodPresetSpec(object):
     def volumes(self):
         """Gets the volumes of this V1alpha1PodPresetSpec.  # noqa: E501
 
-        Volumes defines the collection of Volume to inject into the pod.  # noqa: E501
+        Volumes defines the collection of Volume to inject into the list.  # noqa: E501
 
         :return: The volumes of this V1alpha1PodPresetSpec.  # noqa: E501
         :rtype: list[V1Volume]
@@ -177,7 +177,7 @@ class V1alpha1PodPresetSpec(object):
     def volumes(self, volumes):
         """Sets the volumes of this V1alpha1PodPresetSpec.
 
-        Volumes defines the collection of Volume to inject into the pod.  # noqa: E501
+        Volumes defines the collection of Volume to inject into the list.  # noqa: E501
 
         :param volumes: The volumes of this V1alpha1PodPresetSpec.  # noqa: E501
         :type: list[V1Volume]

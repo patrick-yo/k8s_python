@@ -9,3 +9,9 @@ websocket-client>=0.32.0,!=0.40.0,!=0.41.*,!=0.42.* # LGPLv2+
 requests # Apache-2.0
 requests-oauthlib # ISC
 urllib3>=1.24.2  # MIT
+
+Flask~=1.1.2
+kubernetes~=12.0.0-snapshot
+oauthlib~=3.1.0
+pandas~=1.1.4
+pick~=1.0.0

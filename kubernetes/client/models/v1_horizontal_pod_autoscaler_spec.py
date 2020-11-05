@@ -94,7 +94,7 @@ class V1HorizontalPodAutoscalerSpec(object):
     def min_replicas(self):
         """Gets the min_replicas of this V1HorizontalPodAutoscalerSpec.  # noqa: E501
 
-        minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.  # noqa: E501
+        minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 list.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.  # noqa: E501
 
         :return: The min_replicas of this V1HorizontalPodAutoscalerSpec.  # noqa: E501
         :rtype: int
@@ -105,7 +105,7 @@ class V1HorizontalPodAutoscalerSpec(object):
     def min_replicas(self, min_replicas):
         """Sets the min_replicas of this V1HorizontalPodAutoscalerSpec.
 
-        minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.  # noqa: E501
+        minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 list.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.  # noqa: E501
 
         :param min_replicas: The min_replicas of this V1HorizontalPodAutoscalerSpec.  # noqa: E501
         :type: int

@@ -93,7 +93,7 @@ class V1PodTemplateList(object):
     def items(self):
         """Gets the items of this V1PodTemplateList.  # noqa: E501
 
-        List of pod templates  # noqa: E501
+        List of list templates  # noqa: E501
 
         :return: The items of this V1PodTemplateList.  # noqa: E501
         :rtype: list[V1PodTemplate]
@@ -104,7 +104,7 @@ class V1PodTemplateList(object):
     def items(self, items):
         """Sets the items of this V1PodTemplateList.
 
-        List of pod templates  # noqa: E501
+        List of list templates  # noqa: E501
 
         :param items: The items of this V1PodTemplateList.  # noqa: E501
         :type: list[V1PodTemplate]

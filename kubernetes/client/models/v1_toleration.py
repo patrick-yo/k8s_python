@@ -122,7 +122,7 @@ class V1Toleration(object):
     def operator(self):
         """Gets the operator of this V1Toleration.  # noqa: E501
 
-        Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.  # noqa: E501
+        Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a list can tolerate all taints of a particular category.  # noqa: E501
 
         :return: The operator of this V1Toleration.  # noqa: E501
         :rtype: str
@@ -133,7 +133,7 @@ class V1Toleration(object):
     def operator(self, operator):
         """Sets the operator of this V1Toleration.
 
-        Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a pod can tolerate all taints of a particular category.  # noqa: E501
+        Operator represents a key's relationship to the value. Valid operators are Exists and Equal. Defaults to Equal. Exists is equivalent to wildcard for value, so that a list can tolerate all taints of a particular category.  # noqa: E501
 
         :param operator: The operator of this V1Toleration.  # noqa: E501
         :type: str

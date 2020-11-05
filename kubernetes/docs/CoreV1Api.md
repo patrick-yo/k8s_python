@@ -236,7 +236,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_delete_namespaced_pod_proxy(name, namespace, path=path)
@@ -306,7 +306,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 path = 'path_example' # str | path to the resource
-path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_delete_namespaced_pod_proxy_with_path(name, namespace, path, path2=path2)
@@ -652,9 +652,9 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodAttachOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-container = 'container_example' # str | The container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
+container = 'container_example' # str | The container in which to execute the command. Defaults to only container if there is only one container in the list. (optional)
 stderr = True # bool | Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. (optional)
-stdin = True # bool | Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. (optional)
+stdin = True # bool | Stdin if true, redirects the standard input stream of the list for this call. Defaults to false. (optional)
 stdout = True # bool | Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. (optional)
 tty = True # bool | TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. (optional)
 
@@ -730,10 +730,10 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodExecOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 command = 'command_example' # str | Command is the remote command to execute. argv array. Not executed within a shell. (optional)
-container = 'container_example' # str | Container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
-stderr = True # bool | Redirect the standard error stream of the pod for this call. Defaults to true. (optional)
-stdin = True # bool | Redirect the standard input stream of the pod for this call. Defaults to false. (optional)
-stdout = True # bool | Redirect the standard output stream of the pod for this call. Defaults to true. (optional)
+container = 'container_example' # str | Container in which to execute the command. Defaults to only container if there is only one container in the list. (optional)
+stderr = True # bool | Redirect the standard error stream of the list for this call. Defaults to true. (optional)
+stdin = True # bool | Redirect the standard input stream of the list for this call. Defaults to false. (optional)
+stdout = True # bool | Redirect the standard output stream of the list for this call. Defaults to true. (optional)
 tty = True # bool | TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. (optional)
 
     try:
@@ -877,7 +877,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_get_namespaced_pod_proxy(name, namespace, path=path)
@@ -947,7 +947,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 path = 'path_example' # str | path to the resource
-path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_get_namespaced_pod_proxy_with_path(name, namespace, path, path2=path2)
@@ -1293,7 +1293,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_head_namespaced_pod_proxy(name, namespace, path=path)
@@ -1363,7 +1363,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 path = 'path_example' # str | path to the resource
-path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_head_namespaced_pod_proxy_with_path(name, namespace, path, path2=path2)
@@ -1709,7 +1709,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_options_namespaced_pod_proxy(name, namespace, path=path)
@@ -1779,7 +1779,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 path = 'path_example' # str | path to the resource
-path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_options_namespaced_pod_proxy_with_path(name, namespace, path, path2=path2)
@@ -2125,7 +2125,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_patch_namespaced_pod_proxy(name, namespace, path=path)
@@ -2195,7 +2195,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 path = 'path_example' # str | path to the resource
-path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_patch_namespaced_pod_proxy_with_path(name, namespace, path, path2=path2)
@@ -2541,9 +2541,9 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodAttachOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-container = 'container_example' # str | The container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
+container = 'container_example' # str | The container in which to execute the command. Defaults to only container if there is only one container in the list. (optional)
 stderr = True # bool | Stderr if true indicates that stderr is to be redirected for the attach call. Defaults to true. (optional)
-stdin = True # bool | Stdin if true, redirects the standard input stream of the pod for this call. Defaults to false. (optional)
+stdin = True # bool | Stdin if true, redirects the standard input stream of the list for this call. Defaults to false. (optional)
 stdout = True # bool | Stdout if true indicates that stdout is to be redirected for the attach call. Defaults to true. (optional)
 tty = True # bool | TTY if true indicates that a tty will be allocated for the attach call. This is passed through the container runtime so the tty is allocated on the worker node by the container runtime. Defaults to false. (optional)
 
@@ -2619,10 +2619,10 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodExecOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 command = 'command_example' # str | Command is the remote command to execute. argv array. Not executed within a shell. (optional)
-container = 'container_example' # str | Container in which to execute the command. Defaults to only container if there is only one container in the pod. (optional)
-stderr = True # bool | Redirect the standard error stream of the pod for this call. Defaults to true. (optional)
-stdin = True # bool | Redirect the standard input stream of the pod for this call. Defaults to false. (optional)
-stdout = True # bool | Redirect the standard output stream of the pod for this call. Defaults to true. (optional)
+container = 'container_example' # str | Container in which to execute the command. Defaults to only container if there is only one container in the list. (optional)
+stderr = True # bool | Redirect the standard error stream of the list for this call. Defaults to true. (optional)
+stdin = True # bool | Redirect the standard input stream of the list for this call. Defaults to false. (optional)
+stdout = True # bool | Redirect the standard output stream of the list for this call. Defaults to true. (optional)
 tty = True # bool | TTY if true indicates that a tty will be allocated for the exec call. Defaults to false. (optional)
 
     try:
@@ -2766,7 +2766,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_post_namespaced_pod_proxy(name, namespace, path=path)
@@ -2836,7 +2836,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 path = 'path_example' # str | path to the resource
-path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_post_namespaced_pod_proxy_with_path(name, namespace, path, path2=path2)
@@ -3182,7 +3182,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-path = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_put_namespaced_pod_proxy(name, namespace, path=path)
@@ -3252,7 +3252,7 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     name = 'name_example' # str | name of the PodProxyOptions
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
 path = 'path_example' # str | path to the resource
-path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to pod. (optional)
+path2 = 'path_example' # str | Path is the URL path to use for the current proxy request to list. (optional)
 
     try:
         api_response = api_instance.connect_put_namespaced_pod_proxy_with_path(name, namespace, path, path2=path2)
@@ -12271,12 +12271,12 @@ with kubernetes.client.ApiClient(configuration) as api_client:
     api_instance = kubernetes.client.CoreV1Api(api_client)
     name = 'name_example' # str | name of the Pod
 namespace = 'namespace_example' # str | object name and auth scope, such as for teams and projects
-container = 'container_example' # str | The container for which to stream logs. Defaults to only container if there is one container in the pod. (optional)
-follow = True # bool | Follow the log stream of the pod. Defaults to false. (optional)
+container = 'container_example' # str | The container for which to stream logs. Defaults to only container if there is one container in the list. (optional)
+follow = True # bool | Follow the log stream of the list. Defaults to false. (optional)
 limit_bytes = 56 # int | If set, the number of bytes to read from the server before terminating the log output. This may not display a complete final line of logging, and may return slightly more or slightly less than the specified limit. (optional)
 pretty = 'pretty_example' # str | If 'true', then the output is pretty printed. (optional)
 previous = True # bool | Return previous terminated container logs. Defaults to false. (optional)
-since_seconds = 56 # int | A relative time in seconds before the current time from which to show logs. If this value precedes the time a pod was started, only logs since the pod start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. (optional)
+since_seconds = 56 # int | A relative time in seconds before the current time from which to show logs. If this value precedes the time a list was started, only logs since the list start will be returned. If this value is in the future, no logs will be returned. Only one of sinceSeconds or sinceTime may be specified. (optional)
 tail_lines = 56 # int | If set, the number of lines from the end of the logs to show. If not specified, logs are shown from the creation of the container or sinceSeconds or sinceTime (optional)
 timestamps = True # bool | If true, add an RFC3339 or RFC3339Nano timestamp at the beginning of every line of log output. Defaults to false. (optional)
 

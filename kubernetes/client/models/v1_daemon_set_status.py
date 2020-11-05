@@ -143,7 +143,7 @@ class V1DaemonSetStatus(object):
     def current_number_scheduled(self):
         """Gets the current_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
 
-        The number of nodes that are running at least 1 daemon pod and are supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
+        The number of nodes that are running at least 1 daemon list and are supposed to run the daemon list. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
 
         :return: The current_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
         :rtype: int
@@ -154,7 +154,7 @@ class V1DaemonSetStatus(object):
     def current_number_scheduled(self, current_number_scheduled):
         """Sets the current_number_scheduled of this V1DaemonSetStatus.
 
-        The number of nodes that are running at least 1 daemon pod and are supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
+        The number of nodes that are running at least 1 daemon list and are supposed to run the daemon list. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
 
         :param current_number_scheduled: The current_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
         :type: int
@@ -168,7 +168,7 @@ class V1DaemonSetStatus(object):
     def desired_number_scheduled(self):
         """Gets the desired_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
 
-        The total number of nodes that should be running the daemon pod (including nodes correctly running the daemon pod). More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
+        The total number of nodes that should be running the daemon list (including nodes correctly running the daemon list). More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
 
         :return: The desired_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
         :rtype: int
@@ -179,7 +179,7 @@ class V1DaemonSetStatus(object):
     def desired_number_scheduled(self, desired_number_scheduled):
         """Sets the desired_number_scheduled of this V1DaemonSetStatus.
 
-        The total number of nodes that should be running the daemon pod (including nodes correctly running the daemon pod). More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
+        The total number of nodes that should be running the daemon list (including nodes correctly running the daemon list). More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
 
         :param desired_number_scheduled: The desired_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
         :type: int
@@ -193,7 +193,7 @@ class V1DaemonSetStatus(object):
     def number_available(self):
         """Gets the number_available of this V1DaemonSetStatus.  # noqa: E501
 
-        The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and available (ready for at least spec.minReadySeconds)  # noqa: E501
+        The number of nodes that should be running the daemon list and have one or more of the daemon list running and available (ready for at least spec.minReadySeconds)  # noqa: E501
 
         :return: The number_available of this V1DaemonSetStatus.  # noqa: E501
         :rtype: int
@@ -204,7 +204,7 @@ class V1DaemonSetStatus(object):
     def number_available(self, number_available):
         """Sets the number_available of this V1DaemonSetStatus.
 
-        The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and available (ready for at least spec.minReadySeconds)  # noqa: E501
+        The number of nodes that should be running the daemon list and have one or more of the daemon list running and available (ready for at least spec.minReadySeconds)  # noqa: E501
 
         :param number_available: The number_available of this V1DaemonSetStatus.  # noqa: E501
         :type: int
@@ -216,7 +216,7 @@ class V1DaemonSetStatus(object):
     def number_misscheduled(self):
         """Gets the number_misscheduled of this V1DaemonSetStatus.  # noqa: E501
 
-        The number of nodes that are running the daemon pod, but are not supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
+        The number of nodes that are running the daemon list, but are not supposed to run the daemon list. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
 
         :return: The number_misscheduled of this V1DaemonSetStatus.  # noqa: E501
         :rtype: int
@@ -227,7 +227,7 @@ class V1DaemonSetStatus(object):
     def number_misscheduled(self, number_misscheduled):
         """Sets the number_misscheduled of this V1DaemonSetStatus.
 
-        The number of nodes that are running the daemon pod, but are not supposed to run the daemon pod. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
+        The number of nodes that are running the daemon list, but are not supposed to run the daemon list. More info: https://kubernetes.io/docs/concepts/workloads/controllers/daemonset/  # noqa: E501
 
         :param number_misscheduled: The number_misscheduled of this V1DaemonSetStatus.  # noqa: E501
         :type: int
@@ -241,7 +241,7 @@ class V1DaemonSetStatus(object):
     def number_ready(self):
         """Gets the number_ready of this V1DaemonSetStatus.  # noqa: E501
 
-        The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and ready.  # noqa: E501
+        The number of nodes that should be running the daemon list and have one or more of the daemon list running and ready.  # noqa: E501
 
         :return: The number_ready of this V1DaemonSetStatus.  # noqa: E501
         :rtype: int
@@ -252,7 +252,7 @@ class V1DaemonSetStatus(object):
     def number_ready(self, number_ready):
         """Sets the number_ready of this V1DaemonSetStatus.
 
-        The number of nodes that should be running the daemon pod and have one or more of the daemon pod running and ready.  # noqa: E501
+        The number of nodes that should be running the daemon list and have one or more of the daemon list running and ready.  # noqa: E501
 
         :param number_ready: The number_ready of this V1DaemonSetStatus.  # noqa: E501
         :type: int
@@ -266,7 +266,7 @@ class V1DaemonSetStatus(object):
     def number_unavailable(self):
         """Gets the number_unavailable of this V1DaemonSetStatus.  # noqa: E501
 
-        The number of nodes that should be running the daemon pod and have none of the daemon pod running and available (ready for at least spec.minReadySeconds)  # noqa: E501
+        The number of nodes that should be running the daemon list and have none of the daemon list running and available (ready for at least spec.minReadySeconds)  # noqa: E501
 
         :return: The number_unavailable of this V1DaemonSetStatus.  # noqa: E501
         :rtype: int
@@ -277,7 +277,7 @@ class V1DaemonSetStatus(object):
     def number_unavailable(self, number_unavailable):
         """Sets the number_unavailable of this V1DaemonSetStatus.
 
-        The number of nodes that should be running the daemon pod and have none of the daemon pod running and available (ready for at least spec.minReadySeconds)  # noqa: E501
+        The number of nodes that should be running the daemon list and have none of the daemon list running and available (ready for at least spec.minReadySeconds)  # noqa: E501
 
         :param number_unavailable: The number_unavailable of this V1DaemonSetStatus.  # noqa: E501
         :type: int
@@ -312,7 +312,7 @@ class V1DaemonSetStatus(object):
     def updated_number_scheduled(self):
         """Gets the updated_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
 
-        The total number of nodes that are running updated daemon pod  # noqa: E501
+        The total number of nodes that are running updated daemon list  # noqa: E501
 
         :return: The updated_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
         :rtype: int
@@ -323,7 +323,7 @@ class V1DaemonSetStatus(object):
     def updated_number_scheduled(self, updated_number_scheduled):
         """Sets the updated_number_scheduled of this V1DaemonSetStatus.
 
-        The total number of nodes that are running updated daemon pod  # noqa: E501
+        The total number of nodes that are running updated daemon list  # noqa: E501
 
         :param updated_number_scheduled: The updated_number_scheduled of this V1DaemonSetStatus.  # noqa: E501
         :type: int

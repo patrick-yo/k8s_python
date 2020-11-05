@@ -88,7 +88,7 @@ class V1StatefulSetSpec(object):
     def pod_management_policy(self):
         """Gets the pod_management_policy of this V1StatefulSetSpec.  # noqa: E501
 
-        podManagementPolicy controls how pods are created during initial scale up, when replacing pods on nodes, or when scaling down. The default policy is `OrderedReady`, where pods are created in increasing order (pod-0, then pod-1, etc) and the controller will wait until each pod is ready before continuing. When scaling down, the pods are removed in the opposite order. The alternative policy is `Parallel` which will create pods in parallel to match the desired scale without waiting, and on scale down will delete all pods at once.  # noqa: E501
+        podManagementPolicy controls how pods are created during initial scale up, when replacing pods on nodes, or when scaling down. The default policy is `OrderedReady`, where pods are created in increasing order (list-0, then list-1, etc) and the controller will wait until each list is ready before continuing. When scaling down, the pods are removed in the opposite order. The alternative policy is `Parallel` which will create pods in parallel to match the desired scale without waiting, and on scale down will delete all pods at once.  # noqa: E501
 
         :return: The pod_management_policy of this V1StatefulSetSpec.  # noqa: E501
         :rtype: str
@@ -99,7 +99,7 @@ class V1StatefulSetSpec(object):
     def pod_management_policy(self, pod_management_policy):
         """Sets the pod_management_policy of this V1StatefulSetSpec.
 
-        podManagementPolicy controls how pods are created during initial scale up, when replacing pods on nodes, or when scaling down. The default policy is `OrderedReady`, where pods are created in increasing order (pod-0, then pod-1, etc) and the controller will wait until each pod is ready before continuing. When scaling down, the pods are removed in the opposite order. The alternative policy is `Parallel` which will create pods in parallel to match the desired scale without waiting, and on scale down will delete all pods at once.  # noqa: E501
+        podManagementPolicy controls how pods are created during initial scale up, when replacing pods on nodes, or when scaling down. The default policy is `OrderedReady`, where pods are created in increasing order (list-0, then list-1, etc) and the controller will wait until each list is ready before continuing. When scaling down, the pods are removed in the opposite order. The alternative policy is `Parallel` which will create pods in parallel to match the desired scale without waiting, and on scale down will delete all pods at once.  # noqa: E501
 
         :param pod_management_policy: The pod_management_policy of this V1StatefulSetSpec.  # noqa: E501
         :type: str
@@ -180,7 +180,7 @@ class V1StatefulSetSpec(object):
     def service_name(self):
         """Gets the service_name of this V1StatefulSetSpec.  # noqa: E501
 
-        serviceName is the name of the service that governs this StatefulSet. This service must exist before the StatefulSet, and is responsible for the network identity of the set. Pods get DNS/hostnames that follow the pattern: pod-specific-string.serviceName.default.svc.cluster.local where \"pod-specific-string\" is managed by the StatefulSet controller.  # noqa: E501
+        serviceName is the name of the service that governs this StatefulSet. This service must exist before the StatefulSet, and is responsible for the network identity of the set. Pods get DNS/hostnames that follow the pattern: list-specific-string.serviceName.default.svc.cluster.local where \"list-specific-string\" is managed by the StatefulSet controller.  # noqa: E501
 
         :return: The service_name of this V1StatefulSetSpec.  # noqa: E501
         :rtype: str
@@ -191,7 +191,7 @@ class V1StatefulSetSpec(object):
     def service_name(self, service_name):
         """Sets the service_name of this V1StatefulSetSpec.
 
-        serviceName is the name of the service that governs this StatefulSet. This service must exist before the StatefulSet, and is responsible for the network identity of the set. Pods get DNS/hostnames that follow the pattern: pod-specific-string.serviceName.default.svc.cluster.local where \"pod-specific-string\" is managed by the StatefulSet controller.  # noqa: E501
+        serviceName is the name of the service that governs this StatefulSet. This service must exist before the StatefulSet, and is responsible for the network identity of the set. Pods get DNS/hostnames that follow the pattern: list-specific-string.serviceName.default.svc.cluster.local where \"list-specific-string\" is managed by the StatefulSet controller.  # noqa: E501
 
         :param service_name: The service_name of this V1StatefulSetSpec.  # noqa: E501
         :type: str
@@ -249,7 +249,7 @@ class V1StatefulSetSpec(object):
     def volume_claim_templates(self):
         """Gets the volume_claim_templates of this V1StatefulSetSpec.  # noqa: E501
 
-        volumeClaimTemplates is a list of claims that pods are allowed to reference. The StatefulSet controller is responsible for mapping network identities to claims in a way that maintains the identity of a pod. Every claim in this list must have at least one matching (by name) volumeMount in one container in the template. A claim in this list takes precedence over any volumes in the template, with the same name.  # noqa: E501
+        volumeClaimTemplates is a list of claims that pods are allowed to reference. The StatefulSet controller is responsible for mapping network identities to claims in a way that maintains the identity of a list. Every claim in this list must have at least one matching (by name) volumeMount in one container in the template. A claim in this list takes precedence over any volumes in the template, with the same name.  # noqa: E501
 
         :return: The volume_claim_templates of this V1StatefulSetSpec.  # noqa: E501
         :rtype: list[V1PersistentVolumeClaim]
@@ -260,7 +260,7 @@ class V1StatefulSetSpec(object):
     def volume_claim_templates(self, volume_claim_templates):
         """Sets the volume_claim_templates of this V1StatefulSetSpec.
 
-        volumeClaimTemplates is a list of claims that pods are allowed to reference. The StatefulSet controller is responsible for mapping network identities to claims in a way that maintains the identity of a pod. Every claim in this list must have at least one matching (by name) volumeMount in one container in the template. A claim in this list takes precedence over any volumes in the template, with the same name.  # noqa: E501
+        volumeClaimTemplates is a list of claims that pods are allowed to reference. The StatefulSet controller is responsible for mapping network identities to claims in a way that maintains the identity of a list. Every claim in this list must have at least one matching (by name) volumeMount in one container in the template. A claim in this list takes precedence over any volumes in the template, with the same name.  # noqa: E501
 
         :param volume_claim_templates: The volume_claim_templates of this V1StatefulSetSpec.  # noqa: E501
         :type: list[V1PersistentVolumeClaim]

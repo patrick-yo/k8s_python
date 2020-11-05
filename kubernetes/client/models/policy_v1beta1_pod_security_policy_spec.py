@@ -167,7 +167,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def allow_privilege_escalation(self):
         """Gets the allow_privilege_escalation of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true.  # noqa: E501
+        allowPrivilegeEscalation determines if a list can request to allow privilege escalation. If unspecified, defaults to true.  # noqa: E501
 
         :return: The allow_privilege_escalation of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: bool
@@ -178,7 +178,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def allow_privilege_escalation(self, allow_privilege_escalation):
         """Sets the allow_privilege_escalation of this PolicyV1beta1PodSecurityPolicySpec.
 
-        allowPrivilegeEscalation determines if a pod can request to allow privilege escalation. If unspecified, defaults to true.  # noqa: E501
+        allowPrivilegeEscalation determines if a list can request to allow privilege escalation. If unspecified, defaults to true.  # noqa: E501
 
         :param allow_privilege_escalation: The allow_privilege_escalation of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: bool
@@ -190,7 +190,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def allowed_csi_drivers(self):
         """Gets the allowed_csi_drivers of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value indicates that any CSI driver can be used for inline ephemeral volumes. This is an alpha field, and is only honored if the API server enables the CSIInlineVolume feature gate.  # noqa: E501
+        AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a list spec. An empty value indicates that any CSI driver can be used for inline ephemeral volumes. This is an alpha field, and is only honored if the API server enables the CSIInlineVolume feature gate.  # noqa: E501
 
         :return: The allowed_csi_drivers of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: list[PolicyV1beta1AllowedCSIDriver]
@@ -201,7 +201,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def allowed_csi_drivers(self, allowed_csi_drivers):
         """Sets the allowed_csi_drivers of this PolicyV1beta1PodSecurityPolicySpec.
 
-        AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a pod spec. An empty value indicates that any CSI driver can be used for inline ephemeral volumes. This is an alpha field, and is only honored if the API server enables the CSIInlineVolume feature gate.  # noqa: E501
+        AllowedCSIDrivers is a whitelist of inline CSI drivers that must be explicitly set to be embedded within a list spec. An empty value indicates that any CSI driver can be used for inline ephemeral volumes. This is an alpha field, and is only honored if the API server enables the CSIInlineVolume feature gate.  # noqa: E501
 
         :param allowed_csi_drivers: The allowed_csi_drivers of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: list[PolicyV1beta1AllowedCSIDriver]
@@ -213,7 +213,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def allowed_capabilities(self):
         """Gets the allowed_capabilities of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities.  # noqa: E501
+        allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the list author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities.  # noqa: E501
 
         :return: The allowed_capabilities of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: list[str]
@@ -224,7 +224,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def allowed_capabilities(self, allowed_capabilities):
         """Sets the allowed_capabilities of this PolicyV1beta1PodSecurityPolicySpec.
 
-        allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the pod author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities.  # noqa: E501
+        allowedCapabilities is a list of capabilities that can be requested to add to the container. Capabilities in this field may be added at the list author's discretion. You must not list a capability in both allowedCapabilities and requiredDropCapabilities.  # noqa: E501
 
         :param allowed_capabilities: The allowed_capabilities of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: list[str]
@@ -328,7 +328,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def default_add_capabilities(self):
         """Gets the default_add_capabilities of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list.  # noqa: E501
+        defaultAddCapabilities is the default set of capabilities that will be added to the container unless the list spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list.  # noqa: E501
 
         :return: The default_add_capabilities of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: list[str]
@@ -339,7 +339,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def default_add_capabilities(self, default_add_capabilities):
         """Sets the default_add_capabilities of this PolicyV1beta1PodSecurityPolicySpec.
 
-        defaultAddCapabilities is the default set of capabilities that will be added to the container unless the pod spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list.  # noqa: E501
+        defaultAddCapabilities is the default set of capabilities that will be added to the container unless the list spec specifically drops the capability.  You may not list a capability in both defaultAddCapabilities and requiredDropCapabilities. Capabilities added here are implicitly allowed, and need not be included in the allowedCapabilities list.  # noqa: E501
 
         :param default_add_capabilities: The default_add_capabilities of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: list[str]
@@ -420,7 +420,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def host_ipc(self):
         """Gets the host_ipc of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        hostIPC determines if the policy allows the use of HostIPC in the pod spec.  # noqa: E501
+        hostIPC determines if the policy allows the use of HostIPC in the list spec.  # noqa: E501
 
         :return: The host_ipc of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: bool
@@ -431,7 +431,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def host_ipc(self, host_ipc):
         """Sets the host_ipc of this PolicyV1beta1PodSecurityPolicySpec.
 
-        hostIPC determines if the policy allows the use of HostIPC in the pod spec.  # noqa: E501
+        hostIPC determines if the policy allows the use of HostIPC in the list spec.  # noqa: E501
 
         :param host_ipc: The host_ipc of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: bool
@@ -443,7 +443,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def host_network(self):
         """Gets the host_network of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        hostNetwork determines if the policy allows the use of HostNetwork in the pod spec.  # noqa: E501
+        hostNetwork determines if the policy allows the use of HostNetwork in the list spec.  # noqa: E501
 
         :return: The host_network of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: bool
@@ -454,7 +454,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def host_network(self, host_network):
         """Sets the host_network of this PolicyV1beta1PodSecurityPolicySpec.
 
-        hostNetwork determines if the policy allows the use of HostNetwork in the pod spec.  # noqa: E501
+        hostNetwork determines if the policy allows the use of HostNetwork in the list spec.  # noqa: E501
 
         :param host_network: The host_network of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: bool
@@ -466,7 +466,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def host_pid(self):
         """Gets the host_pid of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        hostPID determines if the policy allows the use of HostPID in the pod spec.  # noqa: E501
+        hostPID determines if the policy allows the use of HostPID in the list spec.  # noqa: E501
 
         :return: The host_pid of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: bool
@@ -477,7 +477,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def host_pid(self, host_pid):
         """Sets the host_pid of this PolicyV1beta1PodSecurityPolicySpec.
 
-        hostPID determines if the policy allows the use of HostPID in the pod spec.  # noqa: E501
+        hostPID determines if the policy allows the use of HostPID in the list spec.  # noqa: E501
 
         :param host_pid: The host_pid of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: bool
@@ -512,7 +512,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def privileged(self):
         """Gets the privileged of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        privileged determines if a pod can request to be run as privileged.  # noqa: E501
+        privileged determines if a list can request to be run as privileged.  # noqa: E501
 
         :return: The privileged of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: bool
@@ -523,7 +523,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def privileged(self, privileged):
         """Sets the privileged of this PolicyV1beta1PodSecurityPolicySpec.
 
-        privileged determines if a pod can request to be run as privileged.  # noqa: E501
+        privileged determines if a list can request to be run as privileged.  # noqa: E501
 
         :param privileged: The privileged of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: bool
@@ -535,7 +535,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def read_only_root_filesystem(self):
         """Gets the read_only_root_filesystem of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
 
-        readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the pod. If set to false the container may run with a read only root file system if it wishes but it will not be forced to.  # noqa: E501
+        readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the list. If set to false the container may run with a read only root file system if it wishes but it will not be forced to.  # noqa: E501
 
         :return: The read_only_root_filesystem of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :rtype: bool
@@ -546,7 +546,7 @@ class PolicyV1beta1PodSecurityPolicySpec(object):
     def read_only_root_filesystem(self, read_only_root_filesystem):
         """Sets the read_only_root_filesystem of this PolicyV1beta1PodSecurityPolicySpec.
 
-        readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the pod. If set to false the container may run with a read only root file system if it wishes but it will not be forced to.  # noqa: E501
+        readOnlyRootFilesystem when set to true will force containers to run with a read only root file system.  If the container specifically requests to run with a non-read only root file system the PSP should deny the list. If set to false the container may run with a read only root file system if it wishes but it will not be forced to.  # noqa: E501
 
         :param read_only_root_filesystem: The read_only_root_filesystem of this PolicyV1beta1PodSecurityPolicySpec.  # noqa: E501
         :type: bool

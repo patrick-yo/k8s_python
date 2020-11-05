@@ -126,7 +126,7 @@ class V1beta1ReplicaSetStatus(object):
     def fully_labeled_replicas(self):
         """Gets the fully_labeled_replicas of this V1beta1ReplicaSetStatus.  # noqa: E501
 
-        The number of pods that have labels matching the labels of the pod template of the replicaset.  # noqa: E501
+        The number of pods that have labels matching the labels of the list template of the replicaset.  # noqa: E501
 
         :return: The fully_labeled_replicas of this V1beta1ReplicaSetStatus.  # noqa: E501
         :rtype: int
@@ -137,7 +137,7 @@ class V1beta1ReplicaSetStatus(object):
     def fully_labeled_replicas(self, fully_labeled_replicas):
         """Sets the fully_labeled_replicas of this V1beta1ReplicaSetStatus.
 
-        The number of pods that have labels matching the labels of the pod template of the replicaset.  # noqa: E501
+        The number of pods that have labels matching the labels of the list template of the replicaset.  # noqa: E501
 
         :param fully_labeled_replicas: The fully_labeled_replicas of this V1beta1ReplicaSetStatus.  # noqa: E501
         :type: int

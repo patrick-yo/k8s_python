@@ -340,7 +340,7 @@ class V1Container(object):
     def name(self):
         """Gets the name of this V1Container.  # noqa: E501
 
-        Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.  # noqa: E501
+        Name of the container specified as a DNS_LABEL. Each container in a list must have a unique name (DNS_LABEL). Cannot be updated.  # noqa: E501
 
         :return: The name of this V1Container.  # noqa: E501
         :rtype: str
@@ -351,7 +351,7 @@ class V1Container(object):
     def name(self, name):
         """Sets the name of this V1Container.
 
-        Name of the container specified as a DNS_LABEL. Each container in a pod must have a unique name (DNS_LABEL). Cannot be updated.  # noqa: E501
+        Name of the container specified as a DNS_LABEL. Each container in a list must have a unique name (DNS_LABEL). Cannot be updated.  # noqa: E501
 
         :param name: The name of this V1Container.  # noqa: E501
         :type: str

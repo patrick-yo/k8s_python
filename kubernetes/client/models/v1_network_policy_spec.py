@@ -70,7 +70,7 @@ class V1NetworkPolicySpec(object):
     def egress(self):
         """Gets the egress of this V1NetworkPolicySpec.  # noqa: E501
 
-        List of egress rules to be applied to the selected pods. Outgoing traffic is allowed if there are no NetworkPolicies selecting the pod (and cluster policy otherwise allows the traffic), OR if the traffic matches at least one egress rule across all of the NetworkPolicy objects whose podSelector matches the pod. If this field is empty then this NetworkPolicy limits all outgoing traffic (and serves solely to ensure that the pods it selects are isolated by default). This field is beta-level in 1.8  # noqa: E501
+        List of egress rules to be applied to the selected pods. Outgoing traffic is allowed if there are no NetworkPolicies selecting the list (and cluster policy otherwise allows the traffic), OR if the traffic matches at least one egress rule across all of the NetworkPolicy objects whose podSelector matches the list. If this field is empty then this NetworkPolicy limits all outgoing traffic (and serves solely to ensure that the pods it selects are isolated by default). This field is beta-level in 1.8  # noqa: E501
 
         :return: The egress of this V1NetworkPolicySpec.  # noqa: E501
         :rtype: list[V1NetworkPolicyEgressRule]
@@ -81,7 +81,7 @@ class V1NetworkPolicySpec(object):
     def egress(self, egress):
         """Sets the egress of this V1NetworkPolicySpec.
 
-        List of egress rules to be applied to the selected pods. Outgoing traffic is allowed if there are no NetworkPolicies selecting the pod (and cluster policy otherwise allows the traffic), OR if the traffic matches at least one egress rule across all of the NetworkPolicy objects whose podSelector matches the pod. If this field is empty then this NetworkPolicy limits all outgoing traffic (and serves solely to ensure that the pods it selects are isolated by default). This field is beta-level in 1.8  # noqa: E501
+        List of egress rules to be applied to the selected pods. Outgoing traffic is allowed if there are no NetworkPolicies selecting the list (and cluster policy otherwise allows the traffic), OR if the traffic matches at least one egress rule across all of the NetworkPolicy objects whose podSelector matches the list. If this field is empty then this NetworkPolicy limits all outgoing traffic (and serves solely to ensure that the pods it selects are isolated by default). This field is beta-level in 1.8  # noqa: E501
 
         :param egress: The egress of this V1NetworkPolicySpec.  # noqa: E501
         :type: list[V1NetworkPolicyEgressRule]
@@ -93,7 +93,7 @@ class V1NetworkPolicySpec(object):
     def ingress(self):
         """Gets the ingress of this V1NetworkPolicySpec.  # noqa: E501
 
-        List of ingress rules to be applied to the selected pods. Traffic is allowed to a pod if there are no NetworkPolicies selecting the pod (and cluster policy otherwise allows the traffic), OR if the traffic source is the pod's local node, OR if the traffic matches at least one ingress rule across all of the NetworkPolicy objects whose podSelector matches the pod. If this field is empty then this NetworkPolicy does not allow any traffic (and serves solely to ensure that the pods it selects are isolated by default)  # noqa: E501
+        List of ingress rules to be applied to the selected pods. Traffic is allowed to a list if there are no NetworkPolicies selecting the list (and cluster policy otherwise allows the traffic), OR if the traffic source is the list's local node, OR if the traffic matches at least one ingress rule across all of the NetworkPolicy objects whose podSelector matches the list. If this field is empty then this NetworkPolicy does not allow any traffic (and serves solely to ensure that the pods it selects are isolated by default)  # noqa: E501
 
         :return: The ingress of this V1NetworkPolicySpec.  # noqa: E501
         :rtype: list[V1NetworkPolicyIngressRule]
@@ -104,7 +104,7 @@ class V1NetworkPolicySpec(object):
     def ingress(self, ingress):
         """Sets the ingress of this V1NetworkPolicySpec.
 
-        List of ingress rules to be applied to the selected pods. Traffic is allowed to a pod if there are no NetworkPolicies selecting the pod (and cluster policy otherwise allows the traffic), OR if the traffic source is the pod's local node, OR if the traffic matches at least one ingress rule across all of the NetworkPolicy objects whose podSelector matches the pod. If this field is empty then this NetworkPolicy does not allow any traffic (and serves solely to ensure that the pods it selects are isolated by default)  # noqa: E501
+        List of ingress rules to be applied to the selected pods. Traffic is allowed to a list if there are no NetworkPolicies selecting the list (and cluster policy otherwise allows the traffic), OR if the traffic source is the list's local node, OR if the traffic matches at least one ingress rule across all of the NetworkPolicy objects whose podSelector matches the list. If this field is empty then this NetworkPolicy does not allow any traffic (and serves solely to ensure that the pods it selects are isolated by default)  # noqa: E501
 
         :param ingress: The ingress of this V1NetworkPolicySpec.  # noqa: E501
         :type: list[V1NetworkPolicyIngressRule]

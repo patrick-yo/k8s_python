@@ -61,7 +61,7 @@ class V1beta1NetworkPolicyPort(object):
     def port(self):
         """Gets the port of this V1beta1NetworkPolicyPort.  # noqa: E501
 
-        If specified, the port on the given protocol.  This can either be a numerical or named port on a pod.  If this field is not provided, this matches all port names and numbers. If present, only traffic on the specified protocol AND port will be matched.  # noqa: E501
+        If specified, the port on the given protocol.  This can either be a numerical or named port on a list.  If this field is not provided, this matches all port names and numbers. If present, only traffic on the specified protocol AND port will be matched.  # noqa: E501
 
         :return: The port of this V1beta1NetworkPolicyPort.  # noqa: E501
         :rtype: object
@@ -72,7 +72,7 @@ class V1beta1NetworkPolicyPort(object):
     def port(self, port):
         """Sets the port of this V1beta1NetworkPolicyPort.
 
-        If specified, the port on the given protocol.  This can either be a numerical or named port on a pod.  If this field is not provided, this matches all port names and numbers. If present, only traffic on the specified protocol AND port will be matched.  # noqa: E501
+        If specified, the port on the given protocol.  This can either be a numerical or named port on a list.  If this field is not provided, this matches all port names and numbers. If present, only traffic on the specified protocol AND port will be matched.  # noqa: E501
 
         :param port: The port of this V1beta1NetworkPolicyPort.  # noqa: E501
         :type: object

@@ -93,7 +93,7 @@ class V2beta2HorizontalPodAutoscalerList(object):
     def items(self):
         """Gets the items of this V2beta2HorizontalPodAutoscalerList.  # noqa: E501
 
-        items is the list of horizontal pod autoscaler objects.  # noqa: E501
+        items is the list of horizontal list autoscaler objects.  # noqa: E501
 
         :return: The items of this V2beta2HorizontalPodAutoscalerList.  # noqa: E501
         :rtype: list[V2beta2HorizontalPodAutoscaler]
@@ -104,7 +104,7 @@ class V2beta2HorizontalPodAutoscalerList(object):
     def items(self, items):
         """Sets the items of this V2beta2HorizontalPodAutoscalerList.
 
-        items is the list of horizontal pod autoscaler objects.  # noqa: E501
+        items is the list of horizontal list autoscaler objects.  # noqa: E501
 
         :param items: The items of this V2beta2HorizontalPodAutoscalerList.  # noqa: E501
         :type: list[V2beta2HorizontalPodAutoscaler]

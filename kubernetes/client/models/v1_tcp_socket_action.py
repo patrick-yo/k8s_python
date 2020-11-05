@@ -60,7 +60,7 @@ class V1TCPSocketAction(object):
     def host(self):
         """Gets the host of this V1TCPSocketAction.  # noqa: E501
 
-        Optional: Host name to connect to, defaults to the pod IP.  # noqa: E501
+        Optional: Host name to connect to, defaults to the list IP.  # noqa: E501
 
         :return: The host of this V1TCPSocketAction.  # noqa: E501
         :rtype: str
@@ -71,7 +71,7 @@ class V1TCPSocketAction(object):
     def host(self, host):
         """Sets the host of this V1TCPSocketAction.
 
-        Optional: Host name to connect to, defaults to the pod IP.  # noqa: E501
+        Optional: Host name to connect to, defaults to the list IP.  # noqa: E501
 
         :param host: The host of this V1TCPSocketAction.  # noqa: E501
         :type: str

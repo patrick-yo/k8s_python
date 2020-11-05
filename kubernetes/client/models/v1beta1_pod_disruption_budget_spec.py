@@ -66,7 +66,7 @@ class V1beta1PodDisruptionBudgetSpec(object):
     def max_unavailable(self):
         """Gets the max_unavailable of this V1beta1PodDisruptionBudgetSpec.  # noqa: E501
 
-        An eviction is allowed if at most \"maxUnavailable\" pods selected by \"selector\" are unavailable after the eviction, i.e. even in absence of the evicted pod. For example, one can prevent all voluntary evictions by specifying 0. This is a mutually exclusive setting with \"minAvailable\".  # noqa: E501
+        An eviction is allowed if at most \"maxUnavailable\" pods selected by \"selector\" are unavailable after the eviction, i.e. even in absence of the evicted list. For example, one can prevent all voluntary evictions by specifying 0. This is a mutually exclusive setting with \"minAvailable\".  # noqa: E501
 
         :return: The max_unavailable of this V1beta1PodDisruptionBudgetSpec.  # noqa: E501
         :rtype: object
@@ -77,7 +77,7 @@ class V1beta1PodDisruptionBudgetSpec(object):
     def max_unavailable(self, max_unavailable):
         """Sets the max_unavailable of this V1beta1PodDisruptionBudgetSpec.
 
-        An eviction is allowed if at most \"maxUnavailable\" pods selected by \"selector\" are unavailable after the eviction, i.e. even in absence of the evicted pod. For example, one can prevent all voluntary evictions by specifying 0. This is a mutually exclusive setting with \"minAvailable\".  # noqa: E501
+        An eviction is allowed if at most \"maxUnavailable\" pods selected by \"selector\" are unavailable after the eviction, i.e. even in absence of the evicted list. For example, one can prevent all voluntary evictions by specifying 0. This is a mutually exclusive setting with \"minAvailable\".  # noqa: E501
 
         :param max_unavailable: The max_unavailable of this V1beta1PodDisruptionBudgetSpec.  # noqa: E501
         :type: object
@@ -89,7 +89,7 @@ class V1beta1PodDisruptionBudgetSpec(object):
     def min_available(self):
         """Gets the min_available of this V1beta1PodDisruptionBudgetSpec.  # noqa: E501
 
-        An eviction is allowed if at least \"minAvailable\" pods selected by \"selector\" will still be available after the eviction, i.e. even in the absence of the evicted pod.  So for example you can prevent all voluntary evictions by specifying \"100%\".  # noqa: E501
+        An eviction is allowed if at least \"minAvailable\" pods selected by \"selector\" will still be available after the eviction, i.e. even in the absence of the evicted list.  So for example you can prevent all voluntary evictions by specifying \"100%\".  # noqa: E501
 
         :return: The min_available of this V1beta1PodDisruptionBudgetSpec.  # noqa: E501
         :rtype: object
@@ -100,7 +100,7 @@ class V1beta1PodDisruptionBudgetSpec(object):
     def min_available(self, min_available):
         """Sets the min_available of this V1beta1PodDisruptionBudgetSpec.
 
-        An eviction is allowed if at least \"minAvailable\" pods selected by \"selector\" will still be available after the eviction, i.e. even in the absence of the evicted pod.  So for example you can prevent all voluntary evictions by specifying \"100%\".  # noqa: E501
+        An eviction is allowed if at least \"minAvailable\" pods selected by \"selector\" will still be available after the eviction, i.e. even in the absence of the evicted list.  So for example you can prevent all voluntary evictions by specifying \"100%\".  # noqa: E501
 
         :param min_available: The min_available of this V1beta1PodDisruptionBudgetSpec.  # noqa: E501
         :type: object

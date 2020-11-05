@@ -140,7 +140,7 @@ class V1SecretVolumeSource(object):
     def secret_name(self):
         """Gets the secret_name of this V1SecretVolumeSource.  # noqa: E501
 
-        Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret  # noqa: E501
+        Name of the secret in the list's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret  # noqa: E501
 
         :return: The secret_name of this V1SecretVolumeSource.  # noqa: E501
         :rtype: str
@@ -151,7 +151,7 @@ class V1SecretVolumeSource(object):
     def secret_name(self, secret_name):
         """Sets the secret_name of this V1SecretVolumeSource.
 
-        Name of the secret in the pod's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret  # noqa: E501
+        Name of the secret in the list's namespace to use. More info: https://kubernetes.io/docs/concepts/storage/volumes#secret  # noqa: E501
 
         :param secret_name: The secret_name of this V1SecretVolumeSource.  # noqa: E501
         :type: str

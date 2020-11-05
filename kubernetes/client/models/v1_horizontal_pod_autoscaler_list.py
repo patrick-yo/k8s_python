@@ -93,7 +93,7 @@ class V1HorizontalPodAutoscalerList(object):
     def items(self):
         """Gets the items of this V1HorizontalPodAutoscalerList.  # noqa: E501
 
-        list of horizontal pod autoscaler objects.  # noqa: E501
+        list of horizontal list autoscaler objects.  # noqa: E501
 
         :return: The items of this V1HorizontalPodAutoscalerList.  # noqa: E501
         :rtype: list[V1HorizontalPodAutoscaler]
@@ -104,7 +104,7 @@ class V1HorizontalPodAutoscalerList(object):
     def items(self, items):
         """Sets the items of this V1HorizontalPodAutoscalerList.
 
-        list of horizontal pod autoscaler objects.  # noqa: E501
+        list of horizontal list autoscaler objects.  # noqa: E501
 
         :param items: The items of this V1HorizontalPodAutoscalerList.  # noqa: E501
         :type: list[V1HorizontalPodAutoscaler]

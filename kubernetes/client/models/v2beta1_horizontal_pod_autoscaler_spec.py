@@ -94,7 +94,7 @@ class V2beta1HorizontalPodAutoscalerSpec(object):
     def metrics(self):
         """Gets the metrics of this V2beta1HorizontalPodAutoscalerSpec.  # noqa: E501
 
-        metrics contains the specifications for which to use to calculate the desired replica count (the maximum replica count across all metrics will be used).  The desired replica count is calculated multiplying the ratio between the target value and the current value by the current number of pods.  Ergo, metrics used must decrease as the pod count is increased, and vice-versa.  See the individual metric source types for more information about how each type of metric must respond.  # noqa: E501
+        metrics contains the specifications for which to use to calculate the desired replica count (the maximum replica count across all metrics will be used).  The desired replica count is calculated multiplying the ratio between the target value and the current value by the current number of pods.  Ergo, metrics used must decrease as the list count is increased, and vice-versa.  See the individual metric source types for more information about how each type of metric must respond.  # noqa: E501
 
         :return: The metrics of this V2beta1HorizontalPodAutoscalerSpec.  # noqa: E501
         :rtype: list[V2beta1MetricSpec]
@@ -105,7 +105,7 @@ class V2beta1HorizontalPodAutoscalerSpec(object):
     def metrics(self, metrics):
         """Sets the metrics of this V2beta1HorizontalPodAutoscalerSpec.
 
-        metrics contains the specifications for which to use to calculate the desired replica count (the maximum replica count across all metrics will be used).  The desired replica count is calculated multiplying the ratio between the target value and the current value by the current number of pods.  Ergo, metrics used must decrease as the pod count is increased, and vice-versa.  See the individual metric source types for more information about how each type of metric must respond.  # noqa: E501
+        metrics contains the specifications for which to use to calculate the desired replica count (the maximum replica count across all metrics will be used).  The desired replica count is calculated multiplying the ratio between the target value and the current value by the current number of pods.  Ergo, metrics used must decrease as the list count is increased, and vice-versa.  See the individual metric source types for more information about how each type of metric must respond.  # noqa: E501
 
         :param metrics: The metrics of this V2beta1HorizontalPodAutoscalerSpec.  # noqa: E501
         :type: list[V2beta1MetricSpec]
@@ -117,7 +117,7 @@ class V2beta1HorizontalPodAutoscalerSpec(object):
     def min_replicas(self):
         """Gets the min_replicas of this V2beta1HorizontalPodAutoscalerSpec.  # noqa: E501
 
-        minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.  # noqa: E501
+        minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 list.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.  # noqa: E501
 
         :return: The min_replicas of this V2beta1HorizontalPodAutoscalerSpec.  # noqa: E501
         :rtype: int
@@ -128,7 +128,7 @@ class V2beta1HorizontalPodAutoscalerSpec(object):
     def min_replicas(self, min_replicas):
         """Sets the min_replicas of this V2beta1HorizontalPodAutoscalerSpec.
 
-        minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.  # noqa: E501
+        minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 list.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.  # noqa: E501
 
         :param min_replicas: The min_replicas of this V2beta1HorizontalPodAutoscalerSpec.  # noqa: E501
         :type: int

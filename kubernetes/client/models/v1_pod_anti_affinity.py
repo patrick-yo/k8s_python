@@ -84,7 +84,7 @@ class V1PodAntiAffinity(object):
     def required_during_scheduling_ignored_during_execution(self):
         """Gets the required_during_scheduling_ignored_during_execution of this V1PodAntiAffinity.  # noqa: E501
 
-        If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.  # noqa: E501
+        If the anti-affinity requirements specified by this field are not met at scheduling time, the list will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during list execution (e.g. due to a list label update), the system may or may not try to eventually evict the list from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.  # noqa: E501
 
         :return: The required_during_scheduling_ignored_during_execution of this V1PodAntiAffinity.  # noqa: E501
         :rtype: list[V1PodAffinityTerm]
@@ -95,7 +95,7 @@ class V1PodAntiAffinity(object):
     def required_during_scheduling_ignored_during_execution(self, required_during_scheduling_ignored_during_execution):
         """Sets the required_during_scheduling_ignored_during_execution of this V1PodAntiAffinity.
 
-        If the anti-affinity requirements specified by this field are not met at scheduling time, the pod will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during pod execution (e.g. due to a pod label update), the system may or may not try to eventually evict the pod from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.  # noqa: E501
+        If the anti-affinity requirements specified by this field are not met at scheduling time, the list will not be scheduled onto the node. If the anti-affinity requirements specified by this field cease to be met at some point during list execution (e.g. due to a list label update), the system may or may not try to eventually evict the list from its node. When there are multiple elements, the lists of nodes corresponding to each podAffinityTerm are intersected, i.e. all terms must be satisfied.  # noqa: E501
 
         :param required_during_scheduling_ignored_during_execution: The required_during_scheduling_ignored_during_execution of this V1PodAntiAffinity.  # noqa: E501
         :type: list[V1PodAffinityTerm]

@@ -56,7 +56,7 @@ class V1alpha1Overhead(object):
     def pod_fixed(self):
         """Gets the pod_fixed of this V1alpha1Overhead.  # noqa: E501
 
-        PodFixed represents the fixed resource overhead associated with running a pod.  # noqa: E501
+        PodFixed represents the fixed resource overhead associated with running a list.  # noqa: E501
 
         :return: The pod_fixed of this V1alpha1Overhead.  # noqa: E501
         :rtype: dict(str, str)
@@ -67,7 +67,7 @@ class V1alpha1Overhead(object):
     def pod_fixed(self, pod_fixed):
         """Sets the pod_fixed of this V1alpha1Overhead.
 
-        PodFixed represents the fixed resource overhead associated with running a pod.  # noqa: E501
+        PodFixed represents the fixed resource overhead associated with running a list.  # noqa: E501
 
         :param pod_fixed: The pod_fixed of this V1alpha1Overhead.  # noqa: E501
         :type: dict(str, str)

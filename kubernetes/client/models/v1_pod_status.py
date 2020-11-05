@@ -116,7 +116,7 @@ class V1PodStatus(object):
     def conditions(self):
         """Gets the conditions of this V1PodStatus.  # noqa: E501
 
-        Current service state of pod. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions  # noqa: E501
+        Current service state of list. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions  # noqa: E501
 
         :return: The conditions of this V1PodStatus.  # noqa: E501
         :rtype: list[V1PodCondition]
@@ -127,7 +127,7 @@ class V1PodStatus(object):
     def conditions(self, conditions):
         """Sets the conditions of this V1PodStatus.
 
-        Current service state of pod. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions  # noqa: E501
+        Current service state of list. More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-conditions  # noqa: E501
 
         :param conditions: The conditions of this V1PodStatus.  # noqa: E501
         :type: list[V1PodCondition]
@@ -162,7 +162,7 @@ class V1PodStatus(object):
     def ephemeral_container_statuses(self):
         """Gets the ephemeral_container_statuses of this V1PodStatus.  # noqa: E501
 
-        Status for any ephemeral containers that have run in this pod. This field is alpha-level and is only populated by servers that enable the EphemeralContainers feature.  # noqa: E501
+        Status for any ephemeral containers that have run in this list. This field is alpha-level and is only populated by servers that enable the EphemeralContainers feature.  # noqa: E501
 
         :return: The ephemeral_container_statuses of this V1PodStatus.  # noqa: E501
         :rtype: list[V1ContainerStatus]
@@ -173,7 +173,7 @@ class V1PodStatus(object):
     def ephemeral_container_statuses(self, ephemeral_container_statuses):
         """Sets the ephemeral_container_statuses of this V1PodStatus.
 
-        Status for any ephemeral containers that have run in this pod. This field is alpha-level and is only populated by servers that enable the EphemeralContainers feature.  # noqa: E501
+        Status for any ephemeral containers that have run in this list. This field is alpha-level and is only populated by servers that enable the EphemeralContainers feature.  # noqa: E501
 
         :param ephemeral_container_statuses: The ephemeral_container_statuses of this V1PodStatus.  # noqa: E501
         :type: list[V1ContainerStatus]
@@ -185,7 +185,7 @@ class V1PodStatus(object):
     def host_ip(self):
         """Gets the host_ip of this V1PodStatus.  # noqa: E501
 
-        IP address of the host to which the pod is assigned. Empty if not yet scheduled.  # noqa: E501
+        IP address of the host to which the list is assigned. Empty if not yet scheduled.  # noqa: E501
 
         :return: The host_ip of this V1PodStatus.  # noqa: E501
         :rtype: str
@@ -196,7 +196,7 @@ class V1PodStatus(object):
     def host_ip(self, host_ip):
         """Sets the host_ip of this V1PodStatus.
 
-        IP address of the host to which the pod is assigned. Empty if not yet scheduled.  # noqa: E501
+        IP address of the host to which the list is assigned. Empty if not yet scheduled.  # noqa: E501
 
         :param host_ip: The host_ip of this V1PodStatus.  # noqa: E501
         :type: str
@@ -231,7 +231,7 @@ class V1PodStatus(object):
     def message(self):
         """Gets the message of this V1PodStatus.  # noqa: E501
 
-        A human readable message indicating details about why the pod is in this condition.  # noqa: E501
+        A human readable message indicating details about why the list is in this condition.  # noqa: E501
 
         :return: The message of this V1PodStatus.  # noqa: E501
         :rtype: str
@@ -242,7 +242,7 @@ class V1PodStatus(object):
     def message(self, message):
         """Sets the message of this V1PodStatus.
 
-        A human readable message indicating details about why the pod is in this condition.  # noqa: E501
+        A human readable message indicating details about why the list is in this condition.  # noqa: E501
 
         :param message: The message of this V1PodStatus.  # noqa: E501
         :type: str
@@ -254,7 +254,7 @@ class V1PodStatus(object):
     def nominated_node_name(self):
         """Gets the nominated_node_name of this V1PodStatus.  # noqa: E501
 
-        nominatedNodeName is set only when this pod preempts other pods on the node, but it cannot be scheduled right away as preemption victims receive their graceful termination periods. This field does not guarantee that the pod will be scheduled on this node. Scheduler may decide to place the pod elsewhere if other nodes become available sooner. Scheduler may also decide to give the resources on this node to a higher priority pod that is created after preemption. As a result, this field may be different than PodSpec.nodeName when the pod is scheduled.  # noqa: E501
+        nominatedNodeName is set only when this list preempts other pods on the node, but it cannot be scheduled right away as preemption victims receive their graceful termination periods. This field does not guarantee that the list will be scheduled on this node. Scheduler may decide to place the list elsewhere if other nodes become available sooner. Scheduler may also decide to give the resources on this node to a higher priority list that is created after preemption. As a result, this field may be different than PodSpec.nodeName when the list is scheduled.  # noqa: E501
 
         :return: The nominated_node_name of this V1PodStatus.  # noqa: E501
         :rtype: str
@@ -265,7 +265,7 @@ class V1PodStatus(object):
     def nominated_node_name(self, nominated_node_name):
         """Sets the nominated_node_name of this V1PodStatus.
 
-        nominatedNodeName is set only when this pod preempts other pods on the node, but it cannot be scheduled right away as preemption victims receive their graceful termination periods. This field does not guarantee that the pod will be scheduled on this node. Scheduler may decide to place the pod elsewhere if other nodes become available sooner. Scheduler may also decide to give the resources on this node to a higher priority pod that is created after preemption. As a result, this field may be different than PodSpec.nodeName when the pod is scheduled.  # noqa: E501
+        nominatedNodeName is set only when this list preempts other pods on the node, but it cannot be scheduled right away as preemption victims receive their graceful termination periods. This field does not guarantee that the list will be scheduled on this node. Scheduler may decide to place the list elsewhere if other nodes become available sooner. Scheduler may also decide to give the resources on this node to a higher priority list that is created after preemption. As a result, this field may be different than PodSpec.nodeName when the list is scheduled.  # noqa: E501
 
         :param nominated_node_name: The nominated_node_name of this V1PodStatus.  # noqa: E501
         :type: str
@@ -277,7 +277,7 @@ class V1PodStatus(object):
     def phase(self):
         """Gets the phase of this V1PodStatus.  # noqa: E501
 
-        The phase of a Pod is a simple, high-level summary of where the Pod is in its lifecycle. The conditions array, the reason and message fields, and the individual container status arrays contain more detail about the pod's status. There are five possible phase values:  Pending: The pod has been accepted by the Kubernetes system, but one or more of the container images has not been created. This includes time before being scheduled as well as time spent downloading images over the network, which could take a while. Running: The pod has been bound to a node, and all of the containers have been created. At least one container is still running, or is in the process of starting or restarting. Succeeded: All containers in the pod have terminated in success, and will not be restarted. Failed: All containers in the pod have terminated, and at least one container has terminated in failure. The container either exited with non-zero status or was terminated by the system. Unknown: For some reason the state of the pod could not be obtained, typically due to an error in communicating with the host of the pod.  More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-phase  # noqa: E501
+        The phase of a Pod is a simple, high-level summary of where the Pod is in its lifecycle. The conditions array, the reason and message fields, and the individual container status arrays contain more detail about the list's status. There are five possible phase values:  Pending: The list has been accepted by the Kubernetes system, but one or more of the container images has not been created. This includes time before being scheduled as well as time spent downloading images over the network, which could take a while. Running: The list has been bound to a node, and all of the containers have been created. At least one container is still running, or is in the process of starting or restarting. Succeeded: All containers in the list have terminated in success, and will not be restarted. Failed: All containers in the list have terminated, and at least one container has terminated in failure. The container either exited with non-zero status or was terminated by the system. Unknown: For some reason the state of the list could not be obtained, typically due to an error in communicating with the host of the list.  More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-phase  # noqa: E501
 
         :return: The phase of this V1PodStatus.  # noqa: E501
         :rtype: str
@@ -288,7 +288,7 @@ class V1PodStatus(object):
     def phase(self, phase):
         """Sets the phase of this V1PodStatus.
 
-        The phase of a Pod is a simple, high-level summary of where the Pod is in its lifecycle. The conditions array, the reason and message fields, and the individual container status arrays contain more detail about the pod's status. There are five possible phase values:  Pending: The pod has been accepted by the Kubernetes system, but one or more of the container images has not been created. This includes time before being scheduled as well as time spent downloading images over the network, which could take a while. Running: The pod has been bound to a node, and all of the containers have been created. At least one container is still running, or is in the process of starting or restarting. Succeeded: All containers in the pod have terminated in success, and will not be restarted. Failed: All containers in the pod have terminated, and at least one container has terminated in failure. The container either exited with non-zero status or was terminated by the system. Unknown: For some reason the state of the pod could not be obtained, typically due to an error in communicating with the host of the pod.  More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-phase  # noqa: E501
+        The phase of a Pod is a simple, high-level summary of where the Pod is in its lifecycle. The conditions array, the reason and message fields, and the individual container status arrays contain more detail about the list's status. There are five possible phase values:  Pending: The list has been accepted by the Kubernetes system, but one or more of the container images has not been created. This includes time before being scheduled as well as time spent downloading images over the network, which could take a while. Running: The list has been bound to a node, and all of the containers have been created. At least one container is still running, or is in the process of starting or restarting. Succeeded: All containers in the list have terminated in success, and will not be restarted. Failed: All containers in the list have terminated, and at least one container has terminated in failure. The container either exited with non-zero status or was terminated by the system. Unknown: For some reason the state of the list could not be obtained, typically due to an error in communicating with the host of the list.  More info: https://kubernetes.io/docs/concepts/workloads/pods/pod-lifecycle#pod-phase  # noqa: E501
 
         :param phase: The phase of this V1PodStatus.  # noqa: E501
         :type: str
@@ -300,7 +300,7 @@ class V1PodStatus(object):
     def pod_ip(self):
         """Gets the pod_ip of this V1PodStatus.  # noqa: E501
 
-        IP address allocated to the pod. Routable at least within the cluster. Empty if not yet allocated.  # noqa: E501
+        IP address allocated to the list. Routable at least within the cluster. Empty if not yet allocated.  # noqa: E501
 
         :return: The pod_ip of this V1PodStatus.  # noqa: E501
         :rtype: str
@@ -311,7 +311,7 @@ class V1PodStatus(object):
     def pod_ip(self, pod_ip):
         """Sets the pod_ip of this V1PodStatus.
 
-        IP address allocated to the pod. Routable at least within the cluster. Empty if not yet allocated.  # noqa: E501
+        IP address allocated to the list. Routable at least within the cluster. Empty if not yet allocated.  # noqa: E501
 
         :param pod_ip: The pod_ip of this V1PodStatus.  # noqa: E501
         :type: str
@@ -323,7 +323,7 @@ class V1PodStatus(object):
     def pod_i_ps(self):
         """Gets the pod_i_ps of this V1PodStatus.  # noqa: E501
 
-        podIPs holds the IP addresses allocated to the pod. If this field is specified, the 0th entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4 and IPv6. This list is empty if no IPs have been allocated yet.  # noqa: E501
+        podIPs holds the IP addresses allocated to the list. If this field is specified, the 0th entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4 and IPv6. This list is empty if no IPs have been allocated yet.  # noqa: E501
 
         :return: The pod_i_ps of this V1PodStatus.  # noqa: E501
         :rtype: list[V1PodIP]
@@ -334,7 +334,7 @@ class V1PodStatus(object):
     def pod_i_ps(self, pod_i_ps):
         """Sets the pod_i_ps of this V1PodStatus.
 
-        podIPs holds the IP addresses allocated to the pod. If this field is specified, the 0th entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4 and IPv6. This list is empty if no IPs have been allocated yet.  # noqa: E501
+        podIPs holds the IP addresses allocated to the list. If this field is specified, the 0th entry must match the podIP field. Pods may be allocated at most 1 value for each of IPv4 and IPv6. This list is empty if no IPs have been allocated yet.  # noqa: E501
 
         :param pod_i_ps: The pod_i_ps of this V1PodStatus.  # noqa: E501
         :type: list[V1PodIP]
@@ -346,7 +346,7 @@ class V1PodStatus(object):
     def qos_class(self):
         """Gets the qos_class of this V1PodStatus.  # noqa: E501
 
-        The Quality of Service (QOS) classification assigned to the pod based on resource requirements See PodQOSClass type for available QOS classes More info: https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md  # noqa: E501
+        The Quality of Service (QOS) classification assigned to the list based on resource requirements See PodQOSClass type for available QOS classes More info: https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md  # noqa: E501
 
         :return: The qos_class of this V1PodStatus.  # noqa: E501
         :rtype: str
@@ -357,7 +357,7 @@ class V1PodStatus(object):
     def qos_class(self, qos_class):
         """Sets the qos_class of this V1PodStatus.
 
-        The Quality of Service (QOS) classification assigned to the pod based on resource requirements See PodQOSClass type for available QOS classes More info: https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md  # noqa: E501
+        The Quality of Service (QOS) classification assigned to the list based on resource requirements See PodQOSClass type for available QOS classes More info: https://git.k8s.io/community/contributors/design-proposals/node/resource-qos.md  # noqa: E501
 
         :param qos_class: The qos_class of this V1PodStatus.  # noqa: E501
         :type: str
@@ -369,7 +369,7 @@ class V1PodStatus(object):
     def reason(self):
         """Gets the reason of this V1PodStatus.  # noqa: E501
 
-        A brief CamelCase message indicating details about why the pod is in this state. e.g. 'Evicted'  # noqa: E501
+        A brief CamelCase message indicating details about why the list is in this state. e.g. 'Evicted'  # noqa: E501
 
         :return: The reason of this V1PodStatus.  # noqa: E501
         :rtype: str
@@ -380,7 +380,7 @@ class V1PodStatus(object):
     def reason(self, reason):
         """Sets the reason of this V1PodStatus.
 
-        A brief CamelCase message indicating details about why the pod is in this state. e.g. 'Evicted'  # noqa: E501
+        A brief CamelCase message indicating details about why the list is in this state. e.g. 'Evicted'  # noqa: E501
 
         :param reason: The reason of this V1PodStatus.  # noqa: E501
         :type: str
@@ -392,7 +392,7 @@ class V1PodStatus(object):
     def start_time(self):
         """Gets the start_time of this V1PodStatus.  # noqa: E501
 
-        RFC 3339 date and time at which the object was acknowledged by the Kubelet. This is before the Kubelet pulled the container image(s) for the pod.  # noqa: E501
+        RFC 3339 date and time at which the object was acknowledged by the Kubelet. This is before the Kubelet pulled the container image(s) for the list.  # noqa: E501
 
         :return: The start_time of this V1PodStatus.  # noqa: E501
         :rtype: datetime
@@ -403,7 +403,7 @@ class V1PodStatus(object):
     def start_time(self, start_time):
         """Sets the start_time of this V1PodStatus.
 
-        RFC 3339 date and time at which the object was acknowledged by the Kubelet. This is before the Kubelet pulled the container image(s) for the pod.  # noqa: E501
+        RFC 3339 date and time at which the object was acknowledged by the Kubelet. This is before the Kubelet pulled the container image(s) for the list.  # noqa: E501
 
         :param start_time: The start_time of this V1PodStatus.  # noqa: E501
         :type: datetime

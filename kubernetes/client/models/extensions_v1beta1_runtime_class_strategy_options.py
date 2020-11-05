@@ -60,7 +60,7 @@ class ExtensionsV1beta1RuntimeClassStrategyOptions(object):
     def allowed_runtime_class_names(self):
         """Gets the allowed_runtime_class_names of this ExtensionsV1beta1RuntimeClassStrategyOptions.  # noqa: E501
 
-        allowedRuntimeClassNames is a whitelist of RuntimeClass names that may be specified on a pod. A value of \"*\" means that any RuntimeClass name is allowed, and must be the only item in the list. An empty list requires the RuntimeClassName field to be unset.  # noqa: E501
+        allowedRuntimeClassNames is a whitelist of RuntimeClass names that may be specified on a list. A value of \"*\" means that any RuntimeClass name is allowed, and must be the only item in the list. An empty list requires the RuntimeClassName field to be unset.  # noqa: E501
 
         :return: The allowed_runtime_class_names of this ExtensionsV1beta1RuntimeClassStrategyOptions.  # noqa: E501
         :rtype: list[str]
@@ -71,7 +71,7 @@ class ExtensionsV1beta1RuntimeClassStrategyOptions(object):
     def allowed_runtime_class_names(self, allowed_runtime_class_names):
         """Sets the allowed_runtime_class_names of this ExtensionsV1beta1RuntimeClassStrategyOptions.
 
-        allowedRuntimeClassNames is a whitelist of RuntimeClass names that may be specified on a pod. A value of \"*\" means that any RuntimeClass name is allowed, and must be the only item in the list. An empty list requires the RuntimeClassName field to be unset.  # noqa: E501
+        allowedRuntimeClassNames is a whitelist of RuntimeClass names that may be specified on a list. A value of \"*\" means that any RuntimeClass name is allowed, and must be the only item in the list. An empty list requires the RuntimeClassName field to be unset.  # noqa: E501
 
         :param allowed_runtime_class_names: The allowed_runtime_class_names of this ExtensionsV1beta1RuntimeClassStrategyOptions.  # noqa: E501
         :type: list[str]
@@ -85,7 +85,7 @@ class ExtensionsV1beta1RuntimeClassStrategyOptions(object):
     def default_runtime_class_name(self):
         """Gets the default_runtime_class_name of this ExtensionsV1beta1RuntimeClassStrategyOptions.  # noqa: E501
 
-        defaultRuntimeClassName is the default RuntimeClassName to set on the pod. The default MUST be allowed by the allowedRuntimeClassNames list. A value of nil does not mutate the Pod.  # noqa: E501
+        defaultRuntimeClassName is the default RuntimeClassName to set on the list. The default MUST be allowed by the allowedRuntimeClassNames list. A value of nil does not mutate the Pod.  # noqa: E501
 
         :return: The default_runtime_class_name of this ExtensionsV1beta1RuntimeClassStrategyOptions.  # noqa: E501
         :rtype: str
@@ -96,7 +96,7 @@ class ExtensionsV1beta1RuntimeClassStrategyOptions(object):
     def default_runtime_class_name(self, default_runtime_class_name):
         """Sets the default_runtime_class_name of this ExtensionsV1beta1RuntimeClassStrategyOptions.
 
-        defaultRuntimeClassName is the default RuntimeClassName to set on the pod. The default MUST be allowed by the allowedRuntimeClassNames list. A value of nil does not mutate the Pod.  # noqa: E501
+        defaultRuntimeClassName is the default RuntimeClassName to set on the list. The default MUST be allowed by the allowedRuntimeClassNames list. A value of nil does not mutate the Pod.  # noqa: E501
 
         :param default_runtime_class_name: The default_runtime_class_name of this ExtensionsV1beta1RuntimeClassStrategyOptions.  # noqa: E501
         :type: str

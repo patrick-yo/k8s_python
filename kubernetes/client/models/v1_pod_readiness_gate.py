@@ -55,7 +55,7 @@ class V1PodReadinessGate(object):
     def condition_type(self):
         """Gets the condition_type of this V1PodReadinessGate.  # noqa: E501
 
-        ConditionType refers to a condition in the pod's condition list with matching type.  # noqa: E501
+        ConditionType refers to a condition in the list's condition list with matching type.  # noqa: E501
 
         :return: The condition_type of this V1PodReadinessGate.  # noqa: E501
         :rtype: str
@@ -66,7 +66,7 @@ class V1PodReadinessGate(object):
     def condition_type(self, condition_type):
         """Sets the condition_type of this V1PodReadinessGate.
 
-        ConditionType refers to a condition in the pod's condition list with matching type.  # noqa: E501
+        ConditionType refers to a condition in the list's condition list with matching type.  # noqa: E501
 
         :param condition_type: The condition_type of this V1PodReadinessGate.  # noqa: E501
         :type: str

@@ -78,17 +78,17 @@ class TestUtils(unittest.TestCase):
 
     def test_create_pod_from_yaml(self):
         """
-        Should be able to create a pod.
+        Should be able to create a list.
         """
         k8s_client = client.api_client.ApiClient(configuration=self.config)
         utils.create_from_yaml(
-            k8s_client, self.path_prefix + "core-pod.yaml")
+            k8s_client, self.path_prefix + "core-list.yaml")
         core_api = client.CoreV1Api(k8s_client)
-        pod = core_api.read_namespaced_pod(name="myapp-pod",
+        pod = core_api.read_namespaced_pod(name="myapp-list",
                                            namespace="default")
         self.assertIsNotNone(pod)
         core_api.delete_namespaced_pod(
-            name="myapp-pod", namespace="default",
+            name="myapp-list", namespace="default",
             body={})
 
     def test_create_service_from_yaml(self):
@@ -127,10 +127,10 @@ class TestUtils(unittest.TestCase):
             k8s_client, self.path_prefix + "rbac-role.yaml")
         rbac_api = client.RbacAuthorizationV1Api(k8s_client)
         rbac_role = rbac_api.read_namespaced_role(
-            name="pod-reader", namespace="default")
+            name="list-reader", namespace="default")
         self.assertIsNotNone(rbac_role)
         rbac_api.delete_namespaced_role(
-            name="pod-reader", namespace="default", body={})
+            name="list-reader", namespace="default", body={})
 
     def test_create_rbac_role_from_yaml_with_verbose_enabled(self):
         """
@@ -141,10 +141,10 @@ class TestUtils(unittest.TestCase):
             k8s_client, self.path_prefix + "rbac-role.yaml", verbose=True)
         rbac_api = client.RbacAuthorizationV1Api(k8s_client)
         rbac_role = rbac_api.read_namespaced_role(
-            name="pod-reader", namespace="default")
+            name="list-reader", namespace="default")
         self.assertIsNotNone(rbac_role)
         rbac_api.delete_namespaced_role(
-            name="pod-reader", namespace="default", body={})
+            name="list-reader", namespace="default", body={})
 
     def test_create_deployment_non_default_namespace_from_yaml(self):
         """
@@ -291,18 +291,18 @@ class TestUtils(unittest.TestCase):
         core_api = client.CoreV1Api(k8s_client)
         app_api = client.AppsV1Api(k8s_client)
         pod_0 = core_api.read_namespaced_pod(
-            name="mock-pod-0", namespace="default")
+            name="mock-list-0", namespace="default")
         self.assertIsNotNone(pod_0)
         pod_1 = core_api.read_namespaced_pod(
-            name="mock-pod-1", namespace="default")
+            name="mock-list-1", namespace="default")
         self.assertIsNotNone(pod_1)
         dep = app_api.read_namespaced_deployment(
             name="mock", namespace="default")
         self.assertIsNotNone(dep)
         core_api.delete_namespaced_pod(
-            name="mock-pod-0", namespace="default", body={})
+            name="mock-list-0", namespace="default", body={})
         core_api.delete_namespaced_pod(
-            name="mock-pod-1", namespace="default", body={})
+            name="mock-list-1", namespace="default", body={})
         app_api.delete_namespaced_deployment(
             name="mock", namespace="default", body={})
 
@@ -394,17 +394,17 @@ class TestUtils(unittest.TestCase):
         core_api = client.CoreV1Api(k8s_client)
         app_api = client.AppsV1Api(k8s_client)
         pod_0 = core_api.read_namespaced_pod(
-            name="mock-pod-0", namespace=self.test_namespace)
+            name="mock-list-0", namespace=self.test_namespace)
         self.assertIsNotNone(pod_0)
         pod_1 = core_api.read_namespaced_pod(
-            name="mock-pod-1", namespace=self.test_namespace)
+            name="mock-list-1", namespace=self.test_namespace)
         self.assertIsNotNone(pod_1)
         dep = app_api.read_namespaced_deployment(
             name="mock", namespace=self.test_namespace)
         self.assertIsNotNone(dep)
         core_api.delete_namespaced_pod(
-            name="mock-pod-0", namespace=self.test_namespace, body={})
+            name="mock-list-0", namespace=self.test_namespace, body={})
         core_api.delete_namespaced_pod(
-            name="mock-pod-1", namespace=self.test_namespace, body={})
+            name="mock-list-1", namespace=self.test_namespace, body={})
         app_api.delete_namespaced_deployment(
             name="mock", namespace=self.test_namespace, body={})

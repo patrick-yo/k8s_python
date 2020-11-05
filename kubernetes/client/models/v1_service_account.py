@@ -104,7 +104,7 @@ class V1ServiceAccount(object):
     def automount_service_account_token(self):
         """Gets the automount_service_account_token of this V1ServiceAccount.  # noqa: E501
 
-        AutomountServiceAccountToken indicates whether pods running as this service account should have an API token automatically mounted. Can be overridden at the pod level.  # noqa: E501
+        AutomountServiceAccountToken indicates whether pods running as this service account should have an API token automatically mounted. Can be overridden at the list level.  # noqa: E501
 
         :return: The automount_service_account_token of this V1ServiceAccount.  # noqa: E501
         :rtype: bool
@@ -115,7 +115,7 @@ class V1ServiceAccount(object):
     def automount_service_account_token(self, automount_service_account_token):
         """Sets the automount_service_account_token of this V1ServiceAccount.
 
-        AutomountServiceAccountToken indicates whether pods running as this service account should have an API token automatically mounted. Can be overridden at the pod level.  # noqa: E501
+        AutomountServiceAccountToken indicates whether pods running as this service account should have an API token automatically mounted. Can be overridden at the list level.  # noqa: E501
 
         :param automount_service_account_token: The automount_service_account_token of this V1ServiceAccount.  # noqa: E501
         :type: bool
@@ -127,7 +127,7 @@ class V1ServiceAccount(object):
     def image_pull_secrets(self):
         """Gets the image_pull_secrets of this V1ServiceAccount.  # noqa: E501
 
-        ImagePullSecrets is a list of references to secrets in the same namespace to use for pulling any images in pods that reference this ServiceAccount. ImagePullSecrets are distinct from Secrets because Secrets can be mounted in the pod, but ImagePullSecrets are only accessed by the kubelet. More info: https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod  # noqa: E501
+        ImagePullSecrets is a list of references to secrets in the same namespace to use for pulling any images in pods that reference this ServiceAccount. ImagePullSecrets are distinct from Secrets because Secrets can be mounted in the list, but ImagePullSecrets are only accessed by the kubelet. More info: https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod  # noqa: E501
 
         :return: The image_pull_secrets of this V1ServiceAccount.  # noqa: E501
         :rtype: list[V1LocalObjectReference]
@@ -138,7 +138,7 @@ class V1ServiceAccount(object):
     def image_pull_secrets(self, image_pull_secrets):
         """Sets the image_pull_secrets of this V1ServiceAccount.
 
-        ImagePullSecrets is a list of references to secrets in the same namespace to use for pulling any images in pods that reference this ServiceAccount. ImagePullSecrets are distinct from Secrets because Secrets can be mounted in the pod, but ImagePullSecrets are only accessed by the kubelet. More info: https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod  # noqa: E501
+        ImagePullSecrets is a list of references to secrets in the same namespace to use for pulling any images in pods that reference this ServiceAccount. ImagePullSecrets are distinct from Secrets because Secrets can be mounted in the list, but ImagePullSecrets are only accessed by the kubelet. More info: https://kubernetes.io/docs/concepts/containers/images/#specifying-imagepullsecrets-on-a-pod  # noqa: E501
 
         :param image_pull_secrets: The image_pull_secrets of this V1ServiceAccount.  # noqa: E501
         :type: list[V1LocalObjectReference]

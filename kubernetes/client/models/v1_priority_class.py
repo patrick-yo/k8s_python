@@ -221,7 +221,7 @@ class V1PriorityClass(object):
     def value(self):
         """Gets the value of this V1PriorityClass.  # noqa: E501
 
-        The value of this priority class. This is the actual priority that pods receive when they have the name of this class in their pod spec.  # noqa: E501
+        The value of this priority class. This is the actual priority that pods receive when they have the name of this class in their list spec.  # noqa: E501
 
         :return: The value of this V1PriorityClass.  # noqa: E501
         :rtype: int
@@ -232,7 +232,7 @@ class V1PriorityClass(object):
     def value(self, value):
         """Sets the value of this V1PriorityClass.
 
-        The value of this priority class. This is the actual priority that pods receive when they have the name of this class in their pod spec.  # noqa: E501
+        The value of this priority class. This is the actual priority that pods receive when they have the name of this class in their list spec.  # noqa: E501
 
         :param value: The value of this V1PriorityClass.  # noqa: E501
         :type: int

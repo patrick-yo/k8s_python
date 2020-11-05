@@ -116,7 +116,7 @@ class V2beta1ExternalMetricSource(object):
     def target_average_value(self):
         """Gets the target_average_value of this V2beta1ExternalMetricSource.  # noqa: E501
 
-        targetAverageValue is the target per-pod value of global metric (as a quantity). Mutually exclusive with TargetValue.  # noqa: E501
+        targetAverageValue is the target per-list value of global metric (as a quantity). Mutually exclusive with TargetValue.  # noqa: E501
 
         :return: The target_average_value of this V2beta1ExternalMetricSource.  # noqa: E501
         :rtype: str
@@ -127,7 +127,7 @@ class V2beta1ExternalMetricSource(object):
     def target_average_value(self, target_average_value):
         """Sets the target_average_value of this V2beta1ExternalMetricSource.
 
-        targetAverageValue is the target per-pod value of global metric (as a quantity). Mutually exclusive with TargetValue.  # noqa: E501
+        targetAverageValue is the target per-list value of global metric (as a quantity). Mutually exclusive with TargetValue.  # noqa: E501
 
         :param target_average_value: The target_average_value of this V2beta1ExternalMetricSource.  # noqa: E501
         :type: str

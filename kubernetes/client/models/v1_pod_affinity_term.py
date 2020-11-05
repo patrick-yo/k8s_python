@@ -86,7 +86,7 @@ class V1PodAffinityTerm(object):
     def namespaces(self):
         """Gets the namespaces of this V1PodAffinityTerm.  # noqa: E501
 
-        namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"  # noqa: E501
+        namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this list's namespace\"  # noqa: E501
 
         :return: The namespaces of this V1PodAffinityTerm.  # noqa: E501
         :rtype: list[str]
@@ -97,7 +97,7 @@ class V1PodAffinityTerm(object):
     def namespaces(self, namespaces):
         """Sets the namespaces of this V1PodAffinityTerm.
 
-        namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"  # noqa: E501
+        namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this list's namespace\"  # noqa: E501
 
         :param namespaces: The namespaces of this V1PodAffinityTerm.  # noqa: E501
         :type: list[str]
@@ -109,7 +109,7 @@ class V1PodAffinityTerm(object):
     def topology_key(self):
         """Gets the topology_key of this V1PodAffinityTerm.  # noqa: E501
 
-        This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.  # noqa: E501
+        This list should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.  # noqa: E501
 
         :return: The topology_key of this V1PodAffinityTerm.  # noqa: E501
         :rtype: str
@@ -120,7 +120,7 @@ class V1PodAffinityTerm(object):
     def topology_key(self, topology_key):
         """Sets the topology_key of this V1PodAffinityTerm.
 
-        This pod should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.  # noqa: E501
+        This list should be co-located (affinity) or not co-located (anti-affinity) with the pods matching the labelSelector in the specified namespaces, where co-located is defined as running on a node whose value of the label with key topologyKey matches that of any node on which any of the selected pods is running. Empty topologyKey is not allowed.  # noqa: E501
 
         :param topology_key: The topology_key of this V1PodAffinityTerm.  # noqa: E501
         :type: str

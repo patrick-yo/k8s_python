@@ -61,7 +61,7 @@ class V1alpha1Scheduling(object):
     def node_selector(self):
         """Gets the node_selector of this V1alpha1Scheduling.  # noqa: E501
 
-        nodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a pod's existing nodeSelector. Any conflicts will cause the pod to be rejected in admission.  # noqa: E501
+        nodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a list's existing nodeSelector. Any conflicts will cause the list to be rejected in admission.  # noqa: E501
 
         :return: The node_selector of this V1alpha1Scheduling.  # noqa: E501
         :rtype: dict(str, str)
@@ -72,7 +72,7 @@ class V1alpha1Scheduling(object):
     def node_selector(self, node_selector):
         """Sets the node_selector of this V1alpha1Scheduling.
 
-        nodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a pod's existing nodeSelector. Any conflicts will cause the pod to be rejected in admission.  # noqa: E501
+        nodeSelector lists labels that must be present on nodes that support this RuntimeClass. Pods using this RuntimeClass can only be scheduled to a node matched by this selector. The RuntimeClass nodeSelector is merged with a list's existing nodeSelector. Any conflicts will cause the list to be rejected in admission.  # noqa: E501
 
         :param node_selector: The node_selector of this V1alpha1Scheduling.  # noqa: E501
         :type: dict(str, str)
@@ -84,7 +84,7 @@ class V1alpha1Scheduling(object):
     def tolerations(self):
         """Gets the tolerations of this V1alpha1Scheduling.  # noqa: E501
 
-        tolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the pod and the RuntimeClass.  # noqa: E501
+        tolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the list and the RuntimeClass.  # noqa: E501
 
         :return: The tolerations of this V1alpha1Scheduling.  # noqa: E501
         :rtype: list[V1Toleration]
@@ -95,7 +95,7 @@ class V1alpha1Scheduling(object):
     def tolerations(self, tolerations):
         """Sets the tolerations of this V1alpha1Scheduling.
 
-        tolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the pod and the RuntimeClass.  # noqa: E501
+        tolerations are appended (excluding duplicates) to pods running with this RuntimeClass during admission, effectively unioning the set of nodes tolerated by the list and the RuntimeClass.  # noqa: E501
 
         :param tolerations: The tolerations of this V1alpha1Scheduling.  # noqa: E501
         :type: list[V1Toleration]

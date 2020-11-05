@@ -47,7 +47,7 @@ def main():
         count -= 1
         if not count:
             w.stop()
-    print("Finished pod stream.")
+    print("Finished list stream.")
 
 
 if __name__ == '__main__':

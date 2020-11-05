@@ -74,7 +74,7 @@ class V1HorizontalPodAutoscalerStatus(object):
     def current_cpu_utilization_percentage(self):
         """Gets the current_cpu_utilization_percentage of this V1HorizontalPodAutoscalerStatus.  # noqa: E501
 
-        current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average pod is using now 70% of its requested CPU.  # noqa: E501
+        current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average list is using now 70% of its requested CPU.  # noqa: E501
 
         :return: The current_cpu_utilization_percentage of this V1HorizontalPodAutoscalerStatus.  # noqa: E501
         :rtype: int
@@ -85,7 +85,7 @@ class V1HorizontalPodAutoscalerStatus(object):
     def current_cpu_utilization_percentage(self, current_cpu_utilization_percentage):
         """Sets the current_cpu_utilization_percentage of this V1HorizontalPodAutoscalerStatus.
 
-        current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average pod is using now 70% of its requested CPU.  # noqa: E501
+        current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average list is using now 70% of its requested CPU.  # noqa: E501
 
         :param current_cpu_utilization_percentage: The current_cpu_utilization_percentage of this V1HorizontalPodAutoscalerStatus.  # noqa: E501
         :type: int

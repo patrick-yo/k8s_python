@@ -91,7 +91,7 @@ class V1PodSecurityContext(object):
     def fs_group(self):
         """Gets the fs_group of this V1PodSecurityContext.  # noqa: E501
 
-        A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:  1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----  If unset, the Kubelet will not modify the ownership and permissions of any volume.  # noqa: E501
+        A special supplemental group that applies to all containers in a list. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the list:  1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----  If unset, the Kubelet will not modify the ownership and permissions of any volume.  # noqa: E501
 
         :return: The fs_group of this V1PodSecurityContext.  # noqa: E501
         :rtype: int
@@ -102,7 +102,7 @@ class V1PodSecurityContext(object):
     def fs_group(self, fs_group):
         """Sets the fs_group of this V1PodSecurityContext.
 
-        A special supplemental group that applies to all containers in a pod. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the pod:  1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----  If unset, the Kubelet will not modify the ownership and permissions of any volume.  # noqa: E501
+        A special supplemental group that applies to all containers in a list. Some volume types allow the Kubelet to change the ownership of that volume to be owned by the list:  1. The owning GID will be the FSGroup 2. The setgid bit is set (new files created in the volume will be owned by FSGroup) 3. The permission bits are OR'd with rw-rw----  If unset, the Kubelet will not modify the ownership and permissions of any volume.  # noqa: E501
 
         :param fs_group: The fs_group of this V1PodSecurityContext.  # noqa: E501
         :type: int
@@ -227,7 +227,7 @@ class V1PodSecurityContext(object):
     def sysctls(self):
         """Gets the sysctls of this V1PodSecurityContext.  # noqa: E501
 
-        Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.  # noqa: E501
+        Sysctls hold a list of namespaced sysctls used for the list. Pods with unsupported sysctls (by the container runtime) might fail to launch.  # noqa: E501
 
         :return: The sysctls of this V1PodSecurityContext.  # noqa: E501
         :rtype: list[V1Sysctl]
@@ -238,7 +238,7 @@ class V1PodSecurityContext(object):
     def sysctls(self, sysctls):
         """Sets the sysctls of this V1PodSecurityContext.
 
-        Sysctls hold a list of namespaced sysctls used for the pod. Pods with unsupported sysctls (by the container runtime) might fail to launch.  # noqa: E501
+        Sysctls hold a list of namespaced sysctls used for the list. Pods with unsupported sysctls (by the container runtime) might fail to launch.  # noqa: E501
 
         :param sysctls: The sysctls of this V1PodSecurityContext.  # noqa: E501
         :type: list[V1Sysctl]

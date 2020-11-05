@@ -29,7 +29,7 @@ from kubernetes.client.rest import ApiException
 from kubernetes.stream import portforward
 
 ##############################################################################
-# Kubernetes pod port forwarding works by directly providing a socket which
+# Kubernetes list port forwarding works by directly providing a socket which
 # the python application uses to send and receive data on. This is in contrast
 # to the go client, which opens a local port that the go application then has
 # to open to get a socket to transmit data.
@@ -43,12 +43,12 @@ from kubernetes.stream import portforward
 # function so that DNS names of the following formats will access kubernetes
 # ports:
 #
-#    <pod-name>.<namespace>.kubernetes
-#    <pod-name>.pod.<namespace>.kubernetes
+#    <list-name>.<namespace>.kubernetes
+#    <list-name>.list.<namespace>.kubernetes
 #    <service-name>.svc.<namespace>.kubernetes
 #    <service-name>.service.<namespace>.kubernetes
 #
-# These DNS name can be used to interact with pod ports using python libraries,
+# These DNS name can be used to interact with list ports using python libraries,
 # such as urllib.request and http.client. For example:
 #
 # response = urllib.request.urlopen(
@@ -169,7 +169,7 @@ def portforward_commands(api_instance):
                     else:
                         raise RuntimeError(
                             "Unable to find service port name: %s" % port)
-            elif dns_name[1] != 'pod':
+            elif dns_name[1] != 'list':
                 raise RuntimeError(
                     "Unsupported resource type: %s" %
                     dns_name[1])
@@ -179,7 +179,7 @@ def portforward_commands(api_instance):
     socket.create_connection = kubernetes_create_connection
 
     # Access the nginx http server using the
-    # "<pod-name>.pod.<namespace>.kubernetes" dns name.
+    # "<list-name>.list.<namespace>.kubernetes" dns name.
     response = urllib_request.urlopen(
         'http://%s.pod.default.kubernetes' % name)
     html = response.read().decode('utf-8')

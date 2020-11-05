@@ -80,7 +80,7 @@ class V1beta1DaemonSetSpec(object):
     def min_ready_seconds(self):
         """Gets the min_ready_seconds of this V1beta1DaemonSetSpec.  # noqa: E501
 
-        The minimum number of seconds for which a newly created DaemonSet pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready).  # noqa: E501
+        The minimum number of seconds for which a newly created DaemonSet list should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (list will be considered available as soon as it is ready).  # noqa: E501
 
         :return: The min_ready_seconds of this V1beta1DaemonSetSpec.  # noqa: E501
         :rtype: int
@@ -91,7 +91,7 @@ class V1beta1DaemonSetSpec(object):
     def min_ready_seconds(self, min_ready_seconds):
         """Sets the min_ready_seconds of this V1beta1DaemonSetSpec.
 
-        The minimum number of seconds for which a newly created DaemonSet pod should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (pod will be considered available as soon as it is ready).  # noqa: E501
+        The minimum number of seconds for which a newly created DaemonSet list should be ready without any of its container crashing, for it to be considered available. Defaults to 0 (list will be considered available as soon as it is ready).  # noqa: E501
 
         :param min_ready_seconds: The min_ready_seconds of this V1beta1DaemonSetSpec.  # noqa: E501
         :type: int

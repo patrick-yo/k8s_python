@@ -523,7 +523,7 @@ class V1EphemeralContainer(object):
     def target_container_name(self):
         """Gets the target_container_name of this V1EphemeralContainer.  # noqa: E501
 
-        If set, the name of the container from PodSpec that this ephemeral container targets. The ephemeral container will be run in the namespaces (IPC, PID, etc) of this container. If not set then the ephemeral container is run in whatever namespaces are shared for the pod. Note that the container runtime must support this feature.  # noqa: E501
+        If set, the name of the container from PodSpec that this ephemeral container targets. The ephemeral container will be run in the namespaces (IPC, PID, etc) of this container. If not set then the ephemeral container is run in whatever namespaces are shared for the list. Note that the container runtime must support this feature.  # noqa: E501
 
         :return: The target_container_name of this V1EphemeralContainer.  # noqa: E501
         :rtype: str
@@ -534,7 +534,7 @@ class V1EphemeralContainer(object):
     def target_container_name(self, target_container_name):
         """Sets the target_container_name of this V1EphemeralContainer.
 
-        If set, the name of the container from PodSpec that this ephemeral container targets. The ephemeral container will be run in the namespaces (IPC, PID, etc) of this container. If not set then the ephemeral container is run in whatever namespaces are shared for the pod. Note that the container runtime must support this feature.  # noqa: E501
+        If set, the name of the container from PodSpec that this ephemeral container targets. The ephemeral container will be run in the namespaces (IPC, PID, etc) of this container. If not set then the ephemeral container is run in whatever namespaces are shared for the list. Note that the container runtime must support this feature.  # noqa: E501
 
         :param target_container_name: The target_container_name of this V1EphemeralContainer.  # noqa: E501
         :type: str

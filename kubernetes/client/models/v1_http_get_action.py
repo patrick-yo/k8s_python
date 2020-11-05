@@ -75,7 +75,7 @@ class V1HTTPGetAction(object):
     def host(self):
         """Gets the host of this V1HTTPGetAction.  # noqa: E501
 
-        Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead.  # noqa: E501
+        Host name to connect to, defaults to the list IP. You probably want to set \"Host\" in httpHeaders instead.  # noqa: E501
 
         :return: The host of this V1HTTPGetAction.  # noqa: E501
         :rtype: str
@@ -86,7 +86,7 @@ class V1HTTPGetAction(object):
     def host(self, host):
         """Sets the host of this V1HTTPGetAction.
 
-        Host name to connect to, defaults to the pod IP. You probably want to set \"Host\" in httpHeaders instead.  # noqa: E501
+        Host name to connect to, defaults to the list IP. You probably want to set \"Host\" in httpHeaders instead.  # noqa: E501
 
         :param host: The host of this V1HTTPGetAction.  # noqa: E501
         :type: str

@@ -4,23 +4,23 @@ items:
 - apiVersion: v1
   kind: Pod
   metadata:
-    name: mock-pod-0
+    name: mock-list-0
     labels:
-      app: mock-pod-0
+      app: mock-list-0
   spec:
     containers:
-    - name: mock-pod-0
+    - name: mock-list-0
       image: busybox
       command: ['sh', '-c', 'echo Hello Kubernetes! && sleep 3600']
 - apiVersion: v1
   kind: Pod
   metadata:
-    name: mock-pod-1
+    name: mock-list-1
     labels:
-      app: mock-pod-1
+      app: mock-list-1
   spec:
     containers:
-    - name: mock-pod-1
+    - name: mock-list-1
       image: busybox
       command: ['sh', '-c', 'echo Hello Kubernetes! && sleep 3600']
 ---

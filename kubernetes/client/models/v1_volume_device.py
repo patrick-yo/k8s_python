@@ -84,7 +84,7 @@ class V1VolumeDevice(object):
     def name(self):
         """Gets the name of this V1VolumeDevice.  # noqa: E501
 
-        name must match the name of a persistentVolumeClaim in the pod  # noqa: E501
+        name must match the name of a persistentVolumeClaim in the list  # noqa: E501
 
         :return: The name of this V1VolumeDevice.  # noqa: E501
         :rtype: str
@@ -95,7 +95,7 @@ class V1VolumeDevice(object):
     def name(self, name):
         """Sets the name of this V1VolumeDevice.
 
-        name must match the name of a persistentVolumeClaim in the pod  # noqa: E501
+        name must match the name of a persistentVolumeClaim in the list  # noqa: E501
 
         :param name: The name of this V1VolumeDevice.  # noqa: E501
         :type: str

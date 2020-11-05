@@ -84,7 +84,7 @@ class V1EmptyDirVolumeSource(object):
     def size_limit(self):
         """Gets the size_limit of this V1EmptyDirVolumeSource.  # noqa: E501
 
-        Total amount of local storage required for this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. The default is nil which means that the limit is undefined. More info: http://kubernetes.io/docs/user-guide/volumes#emptydir  # noqa: E501
+        Total amount of local storage required for this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a list. The default is nil which means that the limit is undefined. More info: http://kubernetes.io/docs/user-guide/volumes#emptydir  # noqa: E501
 
         :return: The size_limit of this V1EmptyDirVolumeSource.  # noqa: E501
         :rtype: str
@@ -95,7 +95,7 @@ class V1EmptyDirVolumeSource(object):
     def size_limit(self, size_limit):
         """Sets the size_limit of this V1EmptyDirVolumeSource.
 
-        Total amount of local storage required for this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a pod. The default is nil which means that the limit is undefined. More info: http://kubernetes.io/docs/user-guide/volumes#emptydir  # noqa: E501
+        Total amount of local storage required for this EmptyDir volume. The size limit is also applicable for memory medium. The maximum usage on memory medium EmptyDir would be the minimum value between the SizeLimit specified here and the sum of memory limits of all containers in a list. The default is nil which means that the limit is undefined. More info: http://kubernetes.io/docs/user-guide/volumes#emptydir  # noqa: E501
 
         :param size_limit: The size_limit of this V1EmptyDirVolumeSource.  # noqa: E501
         :type: str

@@ -130,7 +130,7 @@ class V1NodeSpec(object):
     def pod_cidr(self):
         """Gets the pod_cidr of this V1NodeSpec.  # noqa: E501
 
-        PodCIDR represents the pod IP range assigned to the node.  # noqa: E501
+        PodCIDR represents the list IP range assigned to the node.  # noqa: E501
 
         :return: The pod_cidr of this V1NodeSpec.  # noqa: E501
         :rtype: str
@@ -141,7 +141,7 @@ class V1NodeSpec(object):
     def pod_cidr(self, pod_cidr):
         """Sets the pod_cidr of this V1NodeSpec.
 
-        PodCIDR represents the pod IP range assigned to the node.  # noqa: E501
+        PodCIDR represents the list IP range assigned to the node.  # noqa: E501
 
         :param pod_cidr: The pod_cidr of this V1NodeSpec.  # noqa: E501
         :type: str
